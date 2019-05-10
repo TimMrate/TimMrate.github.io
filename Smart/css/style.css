@@ -47,12 +47,44 @@ body {
 .gumb_btn_active span {
 	height: 0;
 }
-
-
 .logo {
 	text-lign: left;
 }
 .nav {
 	text-align: right;
 	margin-top: 17.2px;
+}
+.h1 {
+	font-size: 50px;
+	font-weight: 600;
+	color: #626262;
+	opacity: .94
+}
+.Smart_style, .send_style {
+	color:#fc6744;
+}
+.smart_agency {
+	text-align: center;
+	margin-top: 140px;
+}
+.lorem {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	opacity: .65;
+	margin-top: 30px;
+}
+.form_place {
+	width: 372px;
+	background: #fff;
+	margin-top: 108px;
+	border-radius: 2px;
+}
+.send_msg {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	opacity: .9;
+	text-align: center;
+	padding-top: 24px;
 }
