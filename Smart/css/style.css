@@ -20,7 +20,6 @@ body {
 .gumb_btn span,
 .gumb_btn span::after,
 .gumb_btn span::before  {
-	transition: all .3s ease;
 	display: block;
 	position: absolute;
 	height: 4px;
@@ -32,10 +31,12 @@ body {
 .gumb_btn span::after {
 	content: "";
 	transform: translateY(8px);
+		transition: all .3s ease;
 }
 .gumb_btn span::before {
 	content: "";
 	transform: translateY(-8px);
+	transition: all .3s ease;
 }
 .gumb_btn_active span::before {
 	transform: rotate(45deg);
