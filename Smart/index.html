@@ -6,21 +6,34 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+		<script id="__bs_script__">
+	//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.5'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 	
 </head>
 <body>
 <header class="header">
 	<div class="container">
-		<div class="row justify-content-between top_row">
-			<div class="col-10 col-lg-2">
+		<div class="row justify-content-between ">
+			<div class="col-10 top_row">
 				<div class="logo">
 					<img src="img/logo.png" alt="logo">
 				</div>
 			</div>
-			<div class="col col-lg-1 menu">
-				<nav class="nav">
+
+			<div class="col">
+				
+				<div class="menu">
 					<a href="#" class="gumb_btn"> <span></span> </a>
-				</nav>
+					<nav class="nav_list top_row">
+						<a href="#">Working Process</a>
+						<a href="#">Featured Works</a>
+						<a href="#">Services</a>
+						<a href="#">Team</a>
+						<a href="#">Client's comment</a>
+					</nav>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -30,20 +43,33 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-5"></div>
+			<div class="col-5"></div>
 		</div>
 	
-	<div class="row">
-		<div class="col">
-			<div class="form_place">
-				<div class="send_msg"><span class="send_style">Send</span> A Message</div>
+		<div class="row">
+			<div class="col">
+				<div class="form_place">
+					<div class="send_msg">
+						<span class="send_style">Send</span> A Message
+					</div>
+					<form method="post" action="#" class="form">
+						<input type="text" class="ur_name" placeholder="Your name">
+						<input type="email" class="ur_email" placeholder="Your Email">
+						<textarea class="ur_msg" placeholder="Your Message"></textarea>
+						<div class="btn">
+						<button>
+								Send Message <img src="img/Shape.png" alt="next">
+						</button>
+					</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </header>
+<section></section>
 
-	<script src="script/jquery-3.4.1.min.js"></script>
+	<script src="script/jQery/jquery-3.4.1.min.js "></script>
 	<script src="script/script.js"></script>
 </body>
 </html>
