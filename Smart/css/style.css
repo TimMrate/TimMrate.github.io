@@ -134,6 +134,9 @@ button {
 	border-radius: 27px;
 	transition: all .3s ease;
 }
+.btn img {
+	margin-left: 15px;
+}
 .btn button:hover {
 	background:#f35833;
 }
