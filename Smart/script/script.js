@@ -1,7 +1,7 @@
 $(function () {
-$('.gumb_btn').on('click', function (event){
+$('.btn_menu').on('click', function (event){
 	event.preventDefault();
-	$(this).toggleClass('gumb_btn_active');
+	$(".fa-angle-double-left").toggleClass('rightI');
 	$('.menu').toggleClass('menu_active');
 });
 })

@@ -23,11 +23,8 @@ button {
 	height: 20px;
 	width: 34px;
 	position: absolute;
-	top: 30px;
-	left:-50px;
-	z-index: 2;
-	transition: all .5s ease;
-	transition-delay:.1s;
+	top: 108px;
+	right: 0;
 }
 .gumb_btn span,
 .gumb_btn span::after,
@@ -43,52 +40,10 @@ button {
 .gumb_btn span::after {
 	content: "";
 	transform: translateY(8px);
-	transition: all .6s ease;
 }
 .gumb_btn span::before {
 	content: "";
 	transform: translateY(-8px);
-	transition: all .6s ease;
-}
-.gumb_btn_active span::before {
-	transform: rotate(45deg);
-}
-.gumb_btn_active span::after {
-	transform: rotate(-45deg);
-}
-.gumb_btn_active span {
-	height: 0;
-}
-.gumb_btn span {
-	transition-delay: .2s;
-}
-.menu {
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 40%;
-	height: 100vh;
-	background-color: #fff;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	transform: translateX(100%);
-	transition: all .5s ease;
-	border-radius: 3% 0 0 3%;
-}
-.menu_active {
-	transform: translateX(0%);
-}
-.nav_list {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	height: auto;
-}
-.nav_list a {
-	padding-bottom: 30px;
 }
 .logo {
 	float: left;
@@ -99,7 +54,7 @@ button {
 	color: #626262;
 	opacity: .94
 }
-.Smart_style, .send_style {
+.Word_Style {
 	color:#fc6744;
 }
 .smart_agency {
@@ -111,6 +66,8 @@ button {
 	font-weight: 400;
 	color: #000;
 	opacity: .65;
+}
+.lorem1{
 	margin-top: 30px;
 }
 .form_place {
@@ -118,6 +75,7 @@ button {
 	background: #fff;
 	margin-top: 108px;
 	border-radius: 2px;
+	box-shadow: 0 0 57px rgba(0,0,0, .2);
 }
 .send_msg {
 	font-size: 20px;
@@ -160,14 +118,21 @@ button {
 	align-items: center;
 	justify-content: center;
 	height: 92px;
+	transition: all .3s ease;
 } 
+.btn button:hover {
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.21);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.21);
+	box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.21);
+}
 .btn button {
 	color: #fff;
 	background:#ff5c36;
 	width: 238px;
 	height: 55px;
 	font-size: 16px;
-	border-radius: 27px
+	border-radius: 27px;
+	transition: all .3s ease;
 }
 .btn button:hover {
 	background:#f35833;
@@ -175,4 +140,109 @@ button {
 .btn button:focus {
 	background:#f35833;
 	outline: none;
+}
+.h2W {
+	font-size: 50px;
+	font-weight: 600;
+	opacity: .8;
+}
+.headline1 {
+	text-align: center;
+	margin-top: 140px;
+
+}
+.bloks_row {
+	margin-top: 60px;
+}
+.block_link {
+	height: 262px;
+	width: 100%;
+	margin-top: 50px;
+	position: relative;
+	transition: all .5s ease;
+	text-align: center;
+}
+.b1 {
+	background: #4eb2f7;
+}
+.b2 {
+	background: #c049f8;
+}
+.b3 {
+	background: #817eff;
+}
+.b4 {
+	background: #f74770;
+} 
+.know {
+	text-align: center;
+	height: 55px;
+	width: 87%;
+	position: absolute;
+	background: #fff;
+	border-radius: 27px;
+	top: 232px;
+	left: 50%;
+    transform: translate(-50%, 0);
+   -webkit-box-shadow:0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow:0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+}
+.know_text {
+	color:#737373;
+	margin-left: 10px
+}
+.block_link:hover {
+	-webkit-box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.21);
+	-moz-box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.21);
+	box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.21);
+}
+.fa-magnet, .fa-bug, .fa-cogs, .fa-camera-retro {
+	font-size: 50px;
+	color: #fff;
+	opacity: .8;
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+.fa-camera-retro {
+	transform: rotate(-15deg);
+}
+.textB {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	opacity: .9;
+}
+.loremB {
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	opacity:0.75;
+	padding:0 16%;
+}
+.BL {
+	margin-bottom: 175px;
+}
+.works {
+	background: #fbfbfb;
+}
+.headline2 {
+	text-align: center;
+	padding-top: 120px;
+	margin-bottom: 110px;
+}
+.h2F {
+	font-size: 50px;
+	font-weight: 600;
+	opacity: .8;
+}
+.orange_block {
+	width: 360px;
+	height: 360px;
+	background:#ff5c36;
+	margin-bottom: 30px;
+}
+.col_with_orange {
+	display: flex;
+	justify-content: center;
 }
