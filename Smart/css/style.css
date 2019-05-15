@@ -114,6 +114,10 @@ button {
 
 .btn {
 	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -246,6 +250,10 @@ button {
 	margin-bottom: 30px;
 }
 .col_with_orange {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	justify-content: center;
 }
@@ -272,7 +280,11 @@ button {
 	background:#fbfbfb;
 	width: 105px;
 	height: 92px;
-	display:flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
@@ -320,6 +332,10 @@ button {
 	border: 1px solid rgba(0,0,0,.07);
 }
 .wrap_img {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	justify-content: center;
 	margin-left: 88px;	
@@ -500,7 +516,9 @@ font-size: 16px;
 	font-weight: 400;
 }
 .review-block {
-	width: 537px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 503px;
 	height: 271px;
 	box-shadow: 0 0 27px rgba(20, 20, 21, 0.09);
 	border-radius: 1px;
@@ -513,8 +531,6 @@ font-size: 16px;
 	-ms-align-items: center;
 	align-items: center;
 	flex-direction: column;
-
-
 }
 .avatar {
 	width: 99px;
@@ -522,6 +538,8 @@ font-size: 16px;
 	box-shadow: 0 0 0 rgba(20, 20, 21, 0.38);
 	background-color: #fff;
 	border-radius: 50%;
+	position: relative;
+	top:-45px;
 }
 .h {
 	height: 1000px;
@@ -619,4 +637,8 @@ font-size: 16px;
 }
 .URtext p {
 	padding: 20px 25px 18px 25px;
+}
+.mycarusel {
+height: 400px;
+padding-top: 50px;
 }
