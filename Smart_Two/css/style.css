@@ -323,7 +323,10 @@ body .services__about-text h3 {
   padding: 0;
   margin: 0;
 }
-body .services__about-text hr {
+body .hr {
+    margin-right: auto;
+    margin-top: 1rem ;
+    margin-bottom: 2rem;
   width: 6rem;
   height: 0.3rem;
   background-color: #ff5c36;
