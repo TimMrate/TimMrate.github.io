@@ -22,7 +22,11 @@
  
         .services__about-icons {
             flex-direction: row;
+            justify-content: center;
             margin-bottom: 5rem;
+            .icon {
+                margin-right: 3rem;
+            } 
         }
         .process-section {
             
@@ -36,5 +40,6 @@
             
         }
     }
+
 }
  

@@ -339,9 +339,10 @@ body {
             }
             &__about {
                 margin-top: 13rem;
-                margin-bottom: 16rem;
+                margin-bottom: 16rem; 
                 &-icons {
-                    flex-direction: column; 
+                    flex-direction: column;
+                    justify-content: space-between;
                     .icon {
                         width: 10rem;
                         height: 10rem;

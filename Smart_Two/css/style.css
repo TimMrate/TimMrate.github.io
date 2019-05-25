@@ -410,6 +410,9 @@ body .services__about-icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .services__about-icons .icon {
@@ -870,7 +873,13 @@ body .contact-us__corp p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 5rem;
+  }
+  body .services__about-icons .icon {
+    margin-right: 3rem;
   }
   body .process-section .boxes {
     -webkit-box-pack: center;
