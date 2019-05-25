@@ -8,17 +8,33 @@
             .nameplate-active {
                 margin-left: 3rem;
             }
-
-
+        }
+        .works__squares {
+            justify-content: center;
+            .square {
+                margin-right: 3rem;
+            }
         }
     }
 }
 @media screen and (max-width:992px) {
     body {
-
+ 
         .services__about-icons {
             flex-direction: row;
             margin-bottom: 5rem;
         }
+        .process-section {
+            
+            .boxes {
+                justify-content: center;     
+            }
+            &__1st-box, &__2nd-box, &__3rd-box, &__4th-box {
+                margin-right: 3rem;
+            }
+        
+            
+        }
     }
 }
+ 
