@@ -889,5 +889,8 @@ body .contact-us__corp p {
   body .process-section__1st-box, body .process-section__2nd-box, body .process-section__3rd-box, body .process-section__4th-box {
     margin-right: 3rem;
   }
+  body .services__about {
+    margin-top: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
