@@ -1,0 +1,107 @@
+@import "vars";
+@import "mixins";
+// Готовые класы
+
+button {
+    cursor: pointer;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    header {
+        background: $dark;
+        .top-line {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                        margin-right: 20px;
+                    }
+                
+                    li, a {
+                        @include font(14px, $light, 700);
+                        display: block;
+                        text-decoration: none;
+                        transition: color .3s ease;
+                        &:hover {
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+            .logo {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                .logo-mobile {
+                    display: none;
+                }
+            } 
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 205px;
+                height: 54px;
+                border-radius: 27px;
+                border: 2px solid $light;
+                background: $dark;
+                transition: all .3s ease;
+                p {
+                    @include font(14px, $light);
+                }
+                &:hover {
+                    background: $light; 
+                    p {
+                        @include font(14px);
+                    }
+                }
+            } 
+        }
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1056px;
+            margin-top: 200px;
+            text-transform: uppercase;
+            #title-1 {
+                @include font(24px, rgba($light, 0.5), 700);
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            #title-2 {
+                @include font(76px, $light, 600);
+                line-height: 80px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            #title-3 {
+                @include font(24px, $light, 300);
+                width: 950px;
+                text-align: center;
+            }
+            button {
+                width: 566px;
+                height: 145px;
+                background: $accent;
+                border: 20px solid #434444;
+                border-radius: 73px;
+                @include font(24px, $light, 700);
+                margin-top: 60px;
+                margin-bottom: 210px;
+                text-transform: uppercase;
+                transition: all .3s ease;
+                &:hover {
+                    background: $dark;
+                }
+            }
+        }
+    } 
+}
