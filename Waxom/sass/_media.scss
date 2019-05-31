@@ -1,9 +1,11 @@
 @media (max-width: 1200px) { 
     .next   {
-        right: 10px !important 
-        }
+        right: 10px !important;
+        cursor: pointer;
+         }
     .prev {
-        left: 10px !important
+        left: 25px !important;
+        cursor: pointer;
     }
 
 } 

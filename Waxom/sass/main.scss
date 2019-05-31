@@ -1,4 +1,5 @@
-
+@import 'vars';
+@import 'mixins';
 
 body {
     padding: 0;
@@ -7,8 +8,8 @@ body {
         height: 1024px;
         position: relative;
         // Slider
-        
         #header-slide {
+            z-index: 1;
             position: absolute;
             .item {
                 width: 100%;
@@ -26,7 +27,7 @@ body {
              
             &:hover {
                 .fas {
-                    opacity: .4;
+                    color: $accent-light;
                 }
              } 
             .fas {
@@ -45,7 +46,7 @@ body {
             cursor: pointer;  
             &:hover {
                 .fas {
-                    opacity: .4;
+                    color: $accent-light;
                    }
             }
             .fas {
@@ -82,9 +83,95 @@ body {
                 z-index: 1000; 
             }
         
-    }
+        }
         // Контент шапки
+        .top-line {
+            z-index: 999999;
+            position: relative;
+            padding-top: 40px;
+            justify-content: space-between;
+            align-items: center;
+            .navbar {
+                display: flex;
+                li {
+                    display: block;
+                    margin-right: 29px; 
+                    a {
+                        text-decoration: none;
+                        @include font($Ms, $light, 14px, 300);
+                        transition: color .3s ease;
+                    }
+                    &:hover {
+                        a {
+                            color: $accent-light;
+                        }
+                    }
+                    
+                }
+                li.active-link {
+                    a {
+                        color: $accent-light;
+                    }
+                }  
+            }
+            .icons {
+                a {
+                    text-decoration: none;
+                    @include font($Ms, $light, 14px, 300);
+                    transition: color .3s ease;
+                    margin-right: 15px;
+                    &:hover {
+                         color: $accent-light;
+                    }
+                }
+                 
+            }
+        }
         
+        
+        .header-text {
+            z-index: 999999;
+            position: relative;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 290px;
+            .design {
+                @include font($Rw, $light, 36px, 500);
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            .portfolio {
+                @include font($Rw, $light, 52px, 800);
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            .header-lorem {
+                @include font($Ms, $light, 16px, 300);
+                margin: 0;
+                width: 570px;
+            }
+            button {
+                width: 170px;
+                height: 53px;
+                border-radius: 3px;
+                background-color: $accent;
+                outline: none;
+                border: none;
+                -webkit-box-shadow: 3px 5px 0px 0px rgba(115,99,87,1);
+                -moz-box-shadow: 3px 5px 0px 0px rgba(115,99,87,1);
+                box-shadow: 3px 5px 0px 0px rgba(115,99,87,1);
+                text-transform: uppercase;
+                transition: all .3s ease;
+                margin-top: 50px;    
+                @include font($Rw, $light, 14px, 800);
+                &:active {
+                    background: rgba(115,99,87,1);;
+                    box-shadow: none;
+                } 
+            }
+        }
         
     }
 
