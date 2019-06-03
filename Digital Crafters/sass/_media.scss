@@ -1,0 +1,136 @@
+@media (max-width: 1320px) {
+    .top-line .logo {
+        left: 60%;
+    }
+}
+    
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: $accent;
+        right: -100%;
+        top: 0;
+        transition: all .8s ease;
+        z-index: 2;
+        display: block;
+        padding-top: 15%;
+        &-nav {
+            ul {
+                border-top: 2px solid rgba($light, .5);
+                height: 85vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                padding: 15px 30px;
+                hr {
+                    width: 100%;
+                }
+                li {
+                    list-style: none;   
+                    a {
+                        text-decoration: none;
+                        color: $light;
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .header-nav {
+        display: none;
+    }
+    .top-line .button {
+        display: none;
+    }
+    .top-line .logo {
+        position: relative;
+        display: block;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        z-index: 3;
+
+    }
+    .hamburger {
+        display: block;
+        z-index: 3;
+        margin-left: auto;
+    }
+    .active-menu {
+        right: 0;
+    }
+}
+
+
+// Средние девайсы («таблетки», < 992px) 
+@media (max-width: 991.98px) {
+    .header-text .button {
+        width: 335px;
+        height: 81px;
+        font-size: 16px;
+        border: 10px solid #434444;
+        margin-top: 25px;
+    }
+    .header-text .h1 {
+        font-size: 62px;
+    }
+    .menu-nav ul li a {
+        font-size: 50px;
+    }
+}
+
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+    .header-text .text {
+        font-size: 18px;
+    }
+    .header-text .h1 {
+        font-size: 44px;
+    }
+    .header-text .header-lorem {
+        font-size: 18px;
+    }
+    .logo-mob {
+        display: block;
+    }
+    .logo-ds {
+        display: none;
+    }
+    .top-line {
+        padding: 0 30px;
+        padding-top: 25px;
+    }
+}
+
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+    .menu-nav ul {
+        height: 70vh;
+        position: relative;
+        top: 3vh;
+    }
+    .header-text .text {
+        font-size: 16px;
+    }
+    .header-text .h1 {
+        font-size: 28px;
+    }
+    .header-text .header-lorem {
+        font-size: 16px;
+    }
+    .header-text {
+        margin-top: 50px;
+    }
+    .menu-nav ul li a {
+        font-size: 24px;
+    }
+    .header-text .button {
+        width: 85%;    
+    }
+}
