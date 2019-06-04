@@ -1,5 +1,6 @@
+
 @media (max-width: 1320px) {
-    .top-line .logo {
+    header .logo {
         left: 60%;
     }
 }
@@ -20,7 +21,7 @@
         &-nav {
             ul {
                 border-top: 2px solid rgba($light, .5);
-                height: 85vh;
+                height: 75vh; 
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -63,36 +64,54 @@
     .active-menu {
         right: 0;
     }
+    .help .quote {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .prev {
+        left: 44%;
+    }
+    .next {
+        left: 56%;
+    }
 }
 
 
 // Средние девайсы («таблетки», < 992px) 
 @media (max-width: 991.98px) {
     .header-text .button {
-        width: 335px;
-        height: 81px;
-        font-size: 16px;
-        border: 10px solid #434444;
-        margin-top: 25px;
+        width: 335px !important; 
+        height: 81px !important;
+        font-size: 16px !important;
+        border: 10px solid #434444 !important;
+        margin-top: 25px !important;
     }
-    .header-text .h1 {
+    .help .button {
+        width: 315px;
+        height: 61px;
+        font-size: 16px;
+    }
+    header .header-text .h1 {
         font-size: 62px;
     }
     .menu-nav ul li a {
         font-size: 50px;
+    }
+    .help .lorem {
+        font-size: 18px;
     }
 }
 
 
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width: 767.98px) {
-    .header-text .text {
+    header .header-text .text {
         font-size: 18px;
     }
-    .header-text .h1 {
+    header .header-text .h1 {
         font-size: 44px;
     }
-    .header-text .header-lorem {
+    header .header-text .header-lorem {
         font-size: 18px;
     }
     .logo-mob {
@@ -101,9 +120,37 @@
     .logo-ds {
         display: none;
     }
-    .top-line {
+    header .top-line {
         padding: 0 30px;
         padding-top: 25px;
+    }
+    .help .owl-item .item {
+        width: 550px;
+        height: auto;
+    }
+    .help .owl-item .item .review {
+        padding: 0 20px;
+    }
+    .help .owl-item .item .name {
+        font-size: 16px;
+        padding: 40px;
+    }
+    .help {
+        height: auto;
+    }
+    .prev {
+        left: 41%;
+        bottom: 15px;
+    }
+    .next {
+        left: 59%;
+        bottom: 15px
+    }
+    .help .owl-dots {
+        bottom: 22px;
+    }
+    .menu-nav ul {
+        height: 50vh;
     }
 }
 
@@ -111,26 +158,47 @@
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
     .menu-nav ul {
-        height: 70vh;
+        height: 55vh;
         position: relative;
         top: 3vh;
     }
-    .header-text .text {
+    header .header-text .text {
         font-size: 16px;
     }
-    .header-text .h1 {
+    header .header-text .h1 {
         font-size: 28px;
     }
-    .header-text .header-lorem {
+    header .header-text .header-lorem {
         font-size: 16px;
     }
-    .header-text {
+    header .header-text {
         margin-top: 50px;
     }
     .menu-nav ul li a {
         font-size: 24px;
     }
-    .header-text .button {
-        width: 85%;    
+    header .header-text .button {
+        width: 85% !important;    
+    }
+    .help .h2 {
+        font-size: 24px;
+    }
+    .help .lorem {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .help .owl-item .item {
+        width: 70vw
+    }
+    .prev {
+        left: 36%;
+        bottom: 15px;
+    }
+    .next {
+        left: 64%;
+        bottom: 15px
+    }
+    .help .quote {
+        bottom: 730px;
     }
 }
