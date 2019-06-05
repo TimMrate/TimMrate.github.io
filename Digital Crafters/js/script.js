@@ -1,6 +1,16 @@
 
 
 $( document ).ready(function() {
+  // NiceScroll
+    $("body").niceScroll({
+      horizrailenabled: false,
+      cursorcolor: "#12cf6a", // change cursor color in hex
+      cursoropacitymin: 0.3,
+      cursoropacitymax: 0.9,
+      cursorwidth: "7px", 
+      cursorborder: 'none',
+    });
+  // Menu
   var menu = $('.menu');
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function(e) {
