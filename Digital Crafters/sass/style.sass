@@ -8,11 +8,12 @@
 a
     text-decoration: none
 html 
-    width: 100vw
+    padding: 0
+    margin: 0
+    overflow-x: hidden
 body 
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden
-    width: 100vw
     margin: 0
     padding: 0
 header 
@@ -67,7 +68,7 @@ header
         transition: all .3s ease
         &:hover 
             background: $light
-                color: $dark
+            color: $dark
     .header-text 
         text-align: center
         margin-top: 200px
@@ -237,6 +238,70 @@ header
 
             .active
                 background: #000
+
+.servises
+    background-color: $accent-dark
+    position: relative
+    &-text
+        margin-top: 135px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .h2
+            margin: 0
+            text-align: center
+            color: $light
+            font-size: 42px
+            font-weight: 500
+            margin-bottom: 35px
+        .hr
+            margin: 0 auto
+            width: 70px
+            height: 4px
+            background-color: $light
+        .lorem
+            text-align: center
+            margin-top: 35px
+            // Style for "We’ll do e"
+            color: $light
+            font-size: 17px
+            font-weight: 300
+            max-width: 550px 
+    .service-boxes
+        padding: 0 350px        
+        .service
+            position: relative
+            width: 370px
+            min-height: 232px
+            box-shadow: 0 11px 35px rgba(34, 34, 34, 0.44)
+            border-radius: 5px
+            background-color: $light   
+            margin: 15px
+            margin-top: 90px
+            padding: 0 40px
+            .circle
+                width: 109px
+                height: 109px
+                border-radius: 50%
+                box-shadow: 0 20px 45px rgba(122, 135, 157, 0.06)
+                background-color: $light
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: 0
+                left: 25%
+                transform: translate(-50%, -50%)
+            &-name
+                max-width: 220px 
+                font-size: 24px
+                font-weight: 400
+                margin-top: 80px
+            .service-lorem
+            font-size: 17px
+            font-weight: 300
+
+
 .prev, .next
     left: 50%
     bottom: 0

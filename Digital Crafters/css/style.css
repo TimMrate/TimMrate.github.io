@@ -1357,13 +1357,14 @@ a {
 }
 
 html {
-  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -1448,7 +1449,7 @@ header .button {
 
 header .button:hover {
   background: #fff;
-  background-color: #171818;
+  color: #171818;
 }
 
 header .header-text {
@@ -1676,6 +1677,99 @@ header .header-text .button {
   background: #000;
 }
 
+.servises {
+  background-color: #00b353;
+  position: relative;
+}
+
+.servises-text {
+  margin-top: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servises-text .h2 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.servises-text .hr {
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.servises-text .lorem {
+  text-align: center;
+  margin-top: 35px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 550px;
+}
+
+.servises .service-boxes {
+  padding: 0 350px;
+}
+
+.servises .service-boxes .service {
+  position: relative;
+  width: 370px;
+  min-height: 232px;
+  -webkit-box-shadow: 0 11px 35px rgba(34, 34, 34, 0.44);
+          box-shadow: 0 11px 35px rgba(34, 34, 34, 0.44);
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 15px;
+  margin-top: 90px;
+  padding: 0 40px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.servises .service-boxes .service .circle {
+  width: 109px;
+  height: 109px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 20px 45px rgba(122, 135, 157, 0.06);
+          box-shadow: 0 20px 45px rgba(122, 135, 157, 0.06);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.servises .service-boxes .service-name {
+  max-width: 220px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 80px;
+}
+
 .prev, .next {
   left: 50%;
   bottom: 0;
@@ -1730,6 +1824,12 @@ header .header-text .button {
 
 .accent-text {
   color: #12cf6a;
+}
+
+@media (max-width: 1500px) {
+  .servises .service-boxes {
+    padding: 0 100px;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -1838,6 +1938,9 @@ header .header-text .button {
   .help .lorem {
     font-size: 18px;
   }
+  .servises .service-boxes {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1888,6 +1991,12 @@ header .header-text .button {
   .menu-nav ul {
     height: 50vh;
   }
+  .servises .service-boxes .service {
+    height: auto;
+  }
+  .servises .service-boxes .service .circle {
+    left: 50%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -1904,6 +2013,8 @@ header .header-text .button {
   }
   header .header-text .header-lorem {
     font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   header .header-text {
     margin-top: 50px;
@@ -1916,6 +2027,7 @@ header .header-text .button {
   }
   .help .h2 {
     font-size: 24px;
+    line-height: 33px;
   }
   .help .lorem {
     font-size: 14px;
@@ -1925,15 +2037,44 @@ header .header-text .button {
     width: 70vw;
   }
   .prev {
-    left: 36%;
+    left: 35%;
     bottom: 15px;
   }
   .next {
-    left: 64%;
+    left: 65%;
     bottom: 15px;
   }
   .help .quote {
     bottom: 730px;
+  }
+  .help .owl-item .item .review {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .prev {
+    left: 30%;
+  }
+  .next {
+    left: 70%;
+  }
+  .servises-text .h2 {
+    font-size: 24px;
+  }
+  .servises-text .lorem {
+    font-size: 14px;
+  }
+  .servises .service-boxes .service .circle {
+    width: 89px;
+    height: 89px;
+  }
+  .servises .service-boxes .service-name {
+    font-size: 18px;
+  }
+  .service-lorem {
+    font-size: 14px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

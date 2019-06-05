@@ -1,4 +1,9 @@
 
+@media (max-width: 1500px) {
+    .servises .service-boxes {
+        padding: 0 100px;  
+    }
+}
 @media (max-width: 1320px) {
     header .logo {
         left: 60%;
@@ -100,6 +105,9 @@
     .help .lorem {
         font-size: 18px;
     }
+    .servises .service-boxes {
+        padding: 0 20px;  
+    }
 }
 
 
@@ -152,6 +160,12 @@
     .menu-nav ul {
         height: 50vh;
     }
+    .servises .service-boxes .service {
+        height: auto;
+    }
+    .servises .service-boxes .service .circle{
+        left:50%;
+    }
 }
 
 
@@ -170,6 +184,8 @@
     }
     header .header-text .header-lorem {
         font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     header .header-text {
         margin-top: 50px;
@@ -182,6 +198,7 @@
     }
     .help .h2 {
         font-size: 24px;
+        line-height: 33px
     }
     .help .lorem {
         font-size: 14px;
@@ -191,14 +208,42 @@
         width: 70vw
     }
     .prev {
-        left: 36%;
+        left: 35%;
         bottom: 15px;
     }
     .next {
-        left: 64%;
+        left: 65%;
         bottom: 15px
     }
     .help .quote {
         bottom: 730px;
+    }
+    .help .owl-item .item .review {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 390px) {
+    .prev {
+        left: 30%;
+    }
+    .next {
+        left: 70%;
+    }
+    .servises-text .h2 {
+        font-size: 24px;
+    }
+    .servises-text .lorem {
+        font-size: 14px;
+    }
+    .servises .service-boxes .service .circle {
+        width: 89px;
+        height: 89px;
+    }
+    .servises .service-boxes .service-name {
+        font-size: 18px;
+    }
+    .service-lorem {
+        font-size: 14px !important;
     }
 }
