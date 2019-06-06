@@ -242,6 +242,7 @@ header
 .servises
     background-color: $accent-dark
     position: relative
+    padding-bottom: 150px
     &-text
         margin-top: 135px
         display: flex
@@ -300,6 +301,107 @@ header
             .service-lorem
             font-size: 17px
             font-weight: 300
+.portfolio
+    padding-bottom: 150px 
+    
+    &-text
+        text-align: center
+        .h2
+            color: $dark
+            font-size: 42px
+            font-weight: 500
+            margin-top: 150px
+            margin-bottom: 20px
+        .hr 
+            width: 70px
+            height: 4px
+            background-color: rgba($dark, 0.15)
+            margin: 0 auto
+        .lorem
+            color: $dark
+            font-size: 17px
+            font-weight: 300 
+            margin: 0 auto  
+            margin-top: 25px     
+            max-width: 495px
+    .owl
+        &-carousel
+            position: relative
+            margin-top: 90px
+        &-item
+            display: flex
+            justify-content: center
+            transform: scale(0.9)
+            opacity: 0.25
+            transition: all .5s ease
+            padding: 50px 0
+            .item
+                min-width: 1170px
+                max-width: 1170px
+                box-shadow: 0 25px 35px rgba(34, 34, 34, 0.11)
+                border-radius: 5px
+                background-color: $light
+                display: flex
+
+                .square
+                    min-width: 586px
+                    height: 467px
+                    border-radius: 5px 0 0 5px
+                    background-color: rgba($light, 0.05)
+                .slider-text
+                    background: $light
+                    padding-left: 40px
+                    border-left: 1px solid #dee0e4
+                    .icon
+                        margin-top: 60px 
+                        width: 77px
+                        height: 77px
+                        background-color: $accent-dark
+                        border-radius: 50%
+                        display: flex 
+                        justify-content: center
+                        align-items: center
+                    .portfolio-name
+                        color: $dark
+                        font-size: 24px
+                        font-weight: 600
+                    .lorem
+                        margin: 0 auto
+                        color: $dark
+                        font-size: 17px
+                        font-weight: 300
+                        max-width: 462px
+                    .tags
+                        margin-top: 20px
+                        margin-bottom: 40px
+                        .tag
+                            border-radius: 10px
+                            border: 1px solid rgba(#4e5b6e, 0.25)
+                            color: $dark
+                            font-size: 11px
+                            font-weight: 600
+                            text-transform: uppercase
+                            padding: 3px 10px
+                            margin-right: 5px
+
+        &-dots
+            position: absolute
+            transform: translate(-50%, 0)
+            left: 50%
+            bottom: 7px
+            .owl-dot
+                width: 6px
+                height: 6px
+                background: rgba(#000, 0.25)
+                border-radius: 50%
+                margin-right: 6px
+                transition: background .5s ease
+            .owl-dot:last-child
+                margin: 0
+
+            .active
+                background: #000
+    
 
 
 .prev, .next
@@ -333,5 +435,6 @@ header
     opacity: 1 !important
 .accent-text
     color: $accent
+
     
 @import 'media'
