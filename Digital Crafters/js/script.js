@@ -16,7 +16,7 @@ $( document ).ready(function() {
     $hamburger.toggleClass("is-active");
 });
   // NiceScroll
-    $("body").niceScroll({
+    $("html").niceScroll({
       horizrailenabled: false,
       cursorcolor: "#12cf6a", // change cursor color in hex
       cursoropacitymin: 0.3,
