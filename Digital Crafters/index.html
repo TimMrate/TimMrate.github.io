@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
     <!-- Стили -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -30,36 +31,34 @@
       <div class="menu">
         <nav class="menu-nav">
           <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about" class="link-menu">ABOUT</a></li>
+            <li><a href="#review-slider" class="link-menu">TESTIMONIALS</a></li>
+            <li><a href="#servises" class="link-menu">SERVICES</a></li>
+            <li><a href="#portfolio" class="link-menu">PORTFOLIO</a></li>
+            <li><a href="#contacts" class="link-menu">CONTACT</a></li>
           </ul>
         </nav>
       </div>
       <div class="top-line">
         <nav class="header-nav">
           <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about" class="link">ABOUT</a></li>
+            <li><a href="#review-slider" class="link">TESTIMONIALS</a></li>
+            <li><a href="#servises" class="link">SERVICES</a></li>
+            <li><a href="#portfolio" class="link">PORTFOLIO</a></li>
+            <li><a href="#contacts" class="link">CONTACT</a></li>
           </ul>
         </nav>
         <div class="logo">
           <a href="#" class="logo-ds"><img src="img/logo-lg.png" alt=""/></a>
-          <a href="#" class="logo-mob"
-            ><img class="logo-mob" src="img/logo-mobile.png" alt=""
-          /></a>
+          <a href="#" class="logo-mob"><img class="logo-mob" src="img/logo-mobile.png" alt=""/></a>
         </div>
         <button class="hamburger hamburger--spin-r" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        <a href="#" class="button">REQUEST A QUOTE</a>
+        <a href="#" class="btn">REQUEST A QUOTE</a>
       </div>
 
       <div class="container">
@@ -76,12 +75,12 @@
               content and tool you need to become unstoppable. 2018 is the year
               you become rich.
             </p>
-            <button class="button">Claim your free consultation</button>
+            <a class="button link" href="#contacts">Claim your free consultation</a>
           </div>
         </div>
       </div>
     </header>
-    <section class="help">
+    <section class="help" id="about">
       <div id="bg"></div>
       <div id="bg-light"></div>
       <div class="quote"></div>
@@ -111,9 +110,9 @@
               entirely. Luckily, you found <br />
               us, and no one can stop you now from working with us.
             </p>
-            <button class="button">
+            <a href="#contacts" class="button link">
               Claim your free consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -203,7 +202,7 @@
         </div>
       </div>
     </section>
-    <section class="servises">
+    <section class="servises" id="servises">
       <div class="container">
         <div class="row">
           <div class="col servises-text">
@@ -277,7 +276,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container"> 
         <div class="row">
           <div class="col portfolio-text">
@@ -370,6 +369,51 @@
         </div>
       </div>
     </section>
+    <sction class="contact" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col contact-text">
+            <h2 class="h2">
+              Contact us today to learn how we increase your revenue.
+            </h2>
+            <div class="hr"></div>
+          </div>
+        </div>
+        <form action="#" class="contact-form" id="form">
+          <div class="inp-group">
+            <input type="text" class="inp-name" placeholder="Your name">
+            <img src="img/icon.png" alt="" >
+          </div>
+          <div class="inp-group">
+           <input type="email" class="inp_email" placeholder="Email">
+           <img src="img/msg.png" alt="">
+          </div>
+          <div class="textarea-group">
+            <textarea class="textarea" placeholder="How we can help you?"></textarea>
+            <img src="img/icon3.png" alt="">
+          </div>
+          <input type="submit" value="Claim your free consultation" class="sbm">
+        </form>
+        </div>
+    </sction>
+    <footer>
+      <div class="row footer">
+        <div class="logo col-lg-3 col-6">
+          <a href="#" class="logo-ds"><img src="img/logo-lg.png" alt=""/></a>
+          <a href="#" class="logo-mob"><img class="logo-mob" src="img/logo-mobile.png" alt=""/></a>
+        </div>
+        <div class="social col-lg-3 col-6">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-invision"></i></a>
+        </div>
+        <div class="footer-text col-lg-3">
+          <a href="#">TERMS OF SERVICE</a>
+          <a href="#">PRIVACY POLICY</a>
+        </div>
+    </div>
+    </footer>
 
     <!-- Скрипты -->
     <script src="libs/jquery-3.4.1.min.js"></script>

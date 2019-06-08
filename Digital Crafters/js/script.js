@@ -1,6 +1,20 @@
 
 
 $( document ).ready(function() {
+    $(".link").on("click", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 2000);
+  });
+  $(".link-menu").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 2000);
+    menu.toggleClass('active-menu');
+    $hamburger.toggleClass("is-active");
+});
   // NiceScroll
     $("body").niceScroll({
       horizrailenabled: false,
