@@ -1,5 +1,9 @@
 
 @media (max-width: 1500px) {
+    body {
+        overflow: hidden;
+        
+    }
     .servises .service-boxes {
         padding: 0 100px;  
     }

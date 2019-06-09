@@ -195,7 +195,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -1020,6 +1020,9 @@ footer .footer-text a:last-child {
 }
 
 @media (max-width: 1500px) {
+  body {
+    overflow: hidden;
+  }
   .servises .service-boxes {
     padding: 0 100px;
   }
