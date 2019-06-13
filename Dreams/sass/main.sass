@@ -1,0 +1,226 @@
+@import 'fonts'
+@import 'mixins'
+@import 'vars'
+@import '../libs/hamburgers/hamburgers'
+*
+    margin: 0
+    padding: 0
+li
+    list-style: none
+a
+    text-decoration: none
+body
+    font-family: 'Open Sans', sans-serif
+    overflow-x: hidden
+.header
+    background-color: #000
+    color: #fff
+    width: 100%
+    height: 100vh
+    .topbar
+        width: 100%
+        height: 50px
+        position: relative
+        display: flex
+        justify-content: space-between
+        .social
+            display: flex
+            li
+                list-style: none
+                margin-right: 27px
+                &:last-child
+                    margin: 0
+            a
+                color: #fff 
+                font-size: 12px
+                text-transform: uppercase
+                line-height: 50px
+        .composition
+            display: flex
+            z-index: 10
+            .adress
+                display: flex
+                align-items: center
+                a
+                    color: #fff
+                    font-size: 12px
+                    font-weight: 400
+                    margin: 0
+                    margin-left: 10px
+                    white-space: nowrap
+                .mob
+                    display: none
+                .fa-map-marker-alt
+                    font-size: 12px
+            .login
+                display: flex
+                align-items: center
+                margin-left: 60px
+                span
+                    width: 1px
+                    height: 20px
+                    background-color: #ffdd00
+                    display: inline-block
+                    margin: 0 12px
+                a
+                    color: #fff
+                    text-decoration: none
+                    font-size: 12px
+                    font-weight: 400
+                    text-transform: uppercase
+    .hr
+        width: 100vw
+        height: 1px
+        position: absolute
+        top: 50px
+        background-color: rgba(#ffdd00, 0.2)
+    .menubar
+        position: relative
+        display: flex
+        align-items: center
+        margin-top: 15px
+        justify-content: space-between
+        .logo
+            z-index: 10
+        .menu-list
+            display: flex
+            li.active
+                a
+                    color: $accent
+            li
+                list-style: none
+                margin-right: 29px
+                &:last-child
+                    margin: 0
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-size: 14px
+                    font-weight: 400
+                    text-transform: uppercase
+                    transition: color .3s ease
+                &:hover
+                    a
+                        color: $accent
+    .header-text
+        margin-top: 270px
+        max-width: 650px
+        position: relative
+        .phone
+            color: $accent
+            font-size: 20px
+            font-weight: 700
+            text-transform: uppercase
+            margin-bottom: 25px
+        .h1
+            font-size: 48px
+            font-weight: 700
+            margin-bottom: 25px
+        .lorem
+            font-size: 16px
+            font-weight: 400
+        .btn
+            display: block
+            width: 171px
+            height: 45px
+            border: 1px solid #ffffff
+            border-radius: 45px 
+            color: $accent
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase 
+            text-decoration: none
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 50px
+            transition: all .3s ease
+            .fa-long-arrow-alt-right
+                margin-right: 10px
+            &:hover
+                background-color: rgba(#ffffff, 0.05)
+
+.bgh
+    width: 100% 
+    height: 100%
+    background-image: url('../img/header-bg.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    opacity: 0.7
+    position: absolute
+    top: 0
+    left: 0
+.hamburger
+    display: none
+    z-index: 10 
+
+.full-menu
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba($accent, .9)
+    right: -100%
+    top: 0
+    transition: all 1s ease
+    padding: 60px 30px 
+    z-index: 10
+    .top
+        background-color: rgba(#292929, 0.95)
+        width: 100%
+        height: 70px
+        border-radius: 10px
+    .full-menu__list
+        margin-top: 30px
+        width: 100%
+        padding: 30px 45px
+        border: 2px solid #fff
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        a
+            display: block
+            text-align: center
+            width: 100%
+            height: 60px
+            background-color: rgba(#292929, 0.95)
+            border-radius: 10px
+            color: #fff
+            font-size: 28px
+            line-height: 60px
+            text-transform: uppercase
+            transition: color .3s ease
+            &:hover
+                color: $accent
+        li
+            margin-bottom: 15px
+            &:last-child
+                margin: 0
+    .full-menu__social
+        margin-top: 30px
+        width: 100%
+        padding: 30px 45px
+        border: 2px solid #fff
+        border-radius: 10px
+        .social-list
+            display: flex
+            justify-content: space-around
+            width: 100%
+            height: 60px
+            background-color: rgba(#292929, 0.95)
+            border-radius: 10px
+            padding: 0 50px
+            a
+                color: #fff
+                font-size: 26px
+                line-height: 60px
+                &:hover
+                    color: $accent
+
+    
+.active-menu
+    right: 0
+
+// Медиа запросы
+@import 'media' 

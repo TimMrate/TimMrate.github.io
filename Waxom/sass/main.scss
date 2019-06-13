@@ -4,7 +4,8 @@
 body {
     padding: 0;
     margin: 0;
-    header {
+}
+.header {
         height: 1024px;
         position: relative;
         // Slider
@@ -86,9 +87,13 @@ body {
                 height: 15px;
                 z-index: 1000; 
             }
-        
         }
         // Контент шапки
+    &-line {
+        z-index: 999;
+        position: relative;
+    }
+}
        
 
 
@@ -109,6 +114,5 @@ body {
     #bg5 {
         background-image: url(../img/5.png);
     }
-}
  
 @import 'media';
