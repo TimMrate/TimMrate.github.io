@@ -6,10 +6,17 @@ $( document ).ready(function() {
     hamburger.toggleClass("is-active");
         // Do something else, like open/close menu
         menu.toggleClass('active-menu');
+        $('html').toggleClass('overflow');
       });
-    // Owl carousel
-    var owl = $('');
-      owl.owlCarousel({
-        
+      // Tabs
+      $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+        $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
       });
+      // Owl carousel
+      var owl = $('');
+        owl.owlCarousel({
+          
+        });
   });

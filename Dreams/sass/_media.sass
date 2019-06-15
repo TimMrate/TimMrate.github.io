@@ -1,6 +1,12 @@
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width:1199.98px) 
-    .header .topbar .social
+    .tabs-forms .tabs .content
+        height: auto
+        .tabs__content.active form
+            flex-wrap: wrap
+            .form-inp
+                margin-bottom: 15px
+            
 
 
 // Средние девайсы («таблетки», < 992px) 
@@ -60,10 +66,23 @@
                 font-size: 22px
                 line-height: 40px
         .full-menu__social
+            .social-list
+                height: 40px
+                a
+                    line-height: 40px
+                    font-size: 22px
+        .full-menu__social
             padding: 15px
             margin-top: 15px
             .social-list
                 padding: 0 10px
+    .tabs-forms .tabs .content .tabs__content.active form .btn
+        position: relative
+        margin-top: 50px
+        button
+            transform: rotate(0)
+    .tabs-forms .tabs .tabs__caption li
+        width: 70px
 
 
 
