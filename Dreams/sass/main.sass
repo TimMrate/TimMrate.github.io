@@ -2,6 +2,7 @@
 @import 'mixins'
 @import 'vars'
 @import '../libs/hamburgers/hamburgers'
+//  Главные отдельные стили
 *
     margin: 0
     padding: 0
@@ -14,6 +15,8 @@ html
 body
     font-family: 'Open Sans', sans-serif
     overflow-x: hidden
+
+    //  Header
 .header
     background-color: #000
     color: #fff
@@ -75,7 +78,7 @@ body
         height: 1px
         position: absolute
         top: 50px
-        background-color: rgba(#ffdd00, 0.2)
+        background-color: rgba(#ffdd00,0.2)
     .menubar
         position: relative
         display: flex
@@ -141,7 +144,6 @@ body
                 margin-right: 10px
             &:hover
                 background-color: rgba(#ffffff, 0.05)
-
 .bgh
     width: 100% 
     height: 100%
@@ -153,10 +155,10 @@ body
     position: absolute
     top: 0
     left: 0
+    // Меню
 .hamburger
     display: none
     z-index: 10 
-
 .full-menu
     display: none
     position: fixed
@@ -219,6 +221,7 @@ body
                 line-height: 60px
                 &:hover
                     color: $accent
+// Навбар с вкладками
 .tabs-forms
     .tabs
         position: relative
@@ -252,6 +255,8 @@ body
             border-left: 24px solid $accent
             height: 187px
             top: 1px
+            transition: all .3s ease
+            overflow: hidden
             transition: all .3s ease
             .tabs__content 
                 display: none
@@ -308,9 +313,10 @@ body
                             font-weight: 400
                             &::placeholder
                                 opacity: 0.35 
+// Populer place
 .packages
     padding-bottom: 120px
-    .packages-text
+    &-text
         .accent-text
             color: $accent
             font-size: 14px
@@ -321,6 +327,7 @@ body
             font-size: 30px
             font-weight: 700
             text-transform: uppercase
+    // Меню
     #places
         .item
             width: 360px !important
@@ -379,19 +386,114 @@ body
                 border-radius: 50%
                 transition: .3s ease
                 margin-right: 10px
+                outline: none
                 &:last-child
                     margin: 0
             .owl-dot.active
-                width: 15px
-                height: 15px
-                background-color: #ffc001
-        
+                transform: scale(1.5)
+                background-color: #ffc001   
         #bg1
             background-image: url(../img/bg1.png)
         #bg2
             background-image: url(../img/bg2.png)
         #bg3 
             background-image: url(../img/bg3.png) 
+    &-composition
+        margin-top: 170px
+        text-align: center
+        margin-bottom: 70px
+        .bg-text
+            background-image: url(../img/populer_place.png)
+            background-repeat: no-repeat
+            background-position:  center
+            text-align: center
+            height: 111px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-bottom: 25px
+            .h3
+                color: #333333
+                font-size: 30px
+                font-weight: 700
+        .lorem  
+            margin: 0 auto
+            color: #333333
+            font-size: 16px
+            font-weight: 400
+            max-width: 658px
+//  Второй слайде
+.slider
+    position: relative
+    #switzerland-slider
+        .item
+            background: #333333
+            width: 100%
+            height: 580px
+            background-repeat: no-repeat
+            background-position: center
+        #switzerland-slider__item
+            background-image: url(../img/norway1.png)
+        .owl-nav
+            position: absolute
+            width: 100%
+            display: flex
+            justify-content: space-between
+            top: 50%
+            padding: 0 100px
+            outline: none
+            .fa-chevron-right, .fa-chevron-left
+                font-size: 30px
+                font-weight: 400
+                color: $accent
+                outline: none
+    .slider-board
+        width: 470px
+        height: 205px
+        box-shadow: 0 15px 30px rgba(230, 230, 230, 0.3)
+        border-radius: 5px
+        background-color: rgba(#fff, 0.75)
+        position: absolute
+        transform: translate(-50%, -50%)
+        left: 50%
+        bottom: -25% 
+        z-index: 2
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding: 30px
+        p
+            font-size: 24px
+            font-weight: 700
+            color: #333333
+            margin-bottom: 20px
+        ul
+            display: flex
+        .dots
+            position: absolute
+            transform: translate(-50%, 0)
+            left: 50%
+            margin-top: 40px
+            display: flex
+            align-items: center
+            bottom: 20%
+            .owl-dot
+                width: 10px
+                height: 10px
+                border: 1px solid #fd0
+                border-radius: 50%
+                transition: .3s ease
+                margin-right: 10px
+                background: none
+                outline: none
+                &:last-child
+                    margin: 0
+            .owl-dot.active
+                transform: scale(1.5)
+                background-color: #ffc001   
+
+
+//  Отдельные стили
 .owl-item
     padding: 30px 0
 
