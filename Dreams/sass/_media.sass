@@ -1,5 +1,5 @@
 // Большие девайсы (большие десктопы, < 1200px)
-@media (max-width:1199.98px) 
+@media (max-width:1200px) 
     .tabs-forms .tabs .content
         height: auto
         .tabs__content.active form
@@ -9,14 +9,18 @@
     .owl-item
         display: flex !important
         justify-content: center !important
-
-            
-
-
+    .package .holiday-text
+       display: flex
+       flex-direction:  column
+       align-items: center
 // Средние девайсы («таблетки», < 992px) 
 @media (max-width:991.98px)
+     .destinations #destinations-slider .item
+        width: 250px
+        .img-box 
+            display: none
 // Малые девайсы («ландшафтные», < 768px)
-@media (max-width:767.98px) 
+@media (max-width:768px) 
     .hamburger
         display: block
         outline: none
@@ -29,7 +33,9 @@
         justify-content: center
     .full-menu
         display: block
-
+    .package .holiday #holiday-slider
+        min-width:  300px
+        width: 100%
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width:575.98px) 
@@ -55,6 +61,20 @@
         padding: 0 15px
     .slider .slider-board
         width: 80%
+    .packages-composition .lorem
+        padding: 0 20px
+    .destinations-text .lorem
+        padding: 0 20px
+    .destinations-text .h3
+        font-size: 26px
+        text-align: center
+    .package .holiday-text
+        .h3
+            text-align: center
+            font-size: 33px
+            padding: 0 20px
+        .lorem  
+            padding: 0 20px
 
 @media (max-width:360px)
     .header .header-text

@@ -34,6 +34,8 @@ $(document).ready(function() {
     // Owl carousel
     var owl_1 = $("#places");
     var owl_2 = $("#switzerland-slider");
+    var owl_3 = $('#destinations-slider');
+    var owl_4 = $('#holiday-slider');
     owl_1.owlCarousel({
         startPosition: 3,
         responsive: {
@@ -58,8 +60,41 @@ $(document).ready(function() {
       nav: true,
       navText: ['<span><i class="fas fa-chevron-left"></i></span>',
       '<span><i class="fas fa-chevron-right"></i></span>'],
-      dotsContainer: '#dots'
+      dotsContainer: '#dots-2'
   });
+  owl_3.owlCarousel({
+    // items: 3,
+    startPosition: 4,
+    smartSpeed: 800,
+    center: true,
+    margin: 30,
+    responsive: {
+        0: {
+            items: 1
+        },
+        575:{
+             items: 1
+        },
+        768: {
+            items: 1
+        },
+        1180: {
+            items: 2
+        },
+        1660: {
+            items: 3
+        }
+    }
+});
+owl_4.owlCarousel({
+    items: 1,
+    startPosition: 1,
+    smartSpeed: 800,
+    nav: true,
+    navText: ['<span><i class="fas fa-chevron-left"></i></span>',
+    '<span><i class="fas fa-chevron-right"></i></span>'],
+    dots: false
+});
     // Якорные ссылки
     $(".link").on("click", function(event) {
         event.preventDefault();
