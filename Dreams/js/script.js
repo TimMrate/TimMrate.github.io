@@ -32,11 +32,12 @@ $(document).ready(function() {
             .addClass("active");
     });
     // Owl carousel
-    var owl_1 = $("#places");
-    var owl_2 = $("#switzerland-slider");
-    var owl_3 = $('#destinations-slider');
-    var owl_4 = $('#holiday-slider');
-    owl_1.owlCarousel({
+    var owl1 = $("#places");
+    var owl2 = $("#switzerland-slider");
+    var owl3 = $('#destinations-slider');
+    var owl4 = $('#holiday-slider');
+    var owl5 = $('#discount-slider');
+    owl1.owlCarousel({
         startPosition: 3,
         responsive: {
             0: {
@@ -53,7 +54,7 @@ $(document).ready(function() {
             }
         }
     });
-    owl_2.owlCarousel({
+    owl2.owlCarousel({
       items: 1,
       startPosition: 1,
       smartSpeed: 800,
@@ -62,7 +63,7 @@ $(document).ready(function() {
       '<span><i class="fas fa-chevron-right"></i></span>'],
       dotsContainer: '#dots-2'
   });
-  owl_3.owlCarousel({
+  owl3.owlCarousel({
     // items: 3,
     startPosition: 4,
     smartSpeed: 800,
@@ -82,11 +83,12 @@ $(document).ready(function() {
             items: 2
         },
         1660: {
-            items: 3
+            items: 3, 
+            center: false
         }
     }
 });
-owl_4.owlCarousel({
+owl4.owlCarousel({
     items: 1,
     startPosition: 1,
     smartSpeed: 800,
@@ -95,6 +97,17 @@ owl_4.owlCarousel({
     '<span><i class="fas fa-chevron-right"></i></span>'],
     dots: false
 });
+owl5.owlCarousel({
+    center: true,
+    startPosition: 2,
+    items: 1,
+    smartSpeed: 800,
+    nav: true,
+    navText: ['<span class="prev"><i class="fas fa-chevron-left"></i></span>',
+    '<span class="next"><i class="fas fa-chevron-left"></i></span>'],
+    dots: false
+});
+
     // Якорные ссылки
     $(".link").on("click", function(event) {
         event.preventDefault();

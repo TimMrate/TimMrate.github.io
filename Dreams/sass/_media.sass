@@ -1,4 +1,7 @@
-// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width:1700px) 
+    .package .discount #discount-slider .owl-nav
+        padding: 0 30px
+    // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width:1200px) 
     .tabs-forms .tabs .content
         height: auto
@@ -13,12 +16,26 @@
        display: flex
        flex-direction:  column
        align-items: center
+    .package .discount
+        margin-top: 300px
 // Средние девайсы («таблетки», < 992px) 
 @media (max-width:991.98px)
-     .destinations #destinations-slider .item
+    .destinations #destinations-slider .item
         width: 250px
         .img-box 
             display: none
+    .package .discount #discount-slider .owl-item .item 
+        width: 90vw
+        .img
+            display: none
+    .package .discount #discount-slider .owl-nav
+        position: relative
+        justify-content: center
+    .package .discount #discount-slider .owl-nav
+        margin-top: 50px 
+        .next
+            margin-left:  50px
+    
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width:768px) 
     .hamburger
@@ -36,7 +53,8 @@
     .package .holiday #holiday-slider
         min-width:  300px
         width: 100%
-
+    .package .discount
+        margin-top: 400px
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width:575.98px) 
     .header .header-text
@@ -75,6 +93,9 @@
             padding: 0 20px
         .lorem  
             padding: 0 20px
+    .package .discount #discount-slider .owl-item .item .slider-text .btn-wrap
+        right: -60px
+        .btn
 
 @media (max-width:360px)
     .header .header-text

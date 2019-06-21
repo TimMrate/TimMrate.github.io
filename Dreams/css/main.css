@@ -218,6 +218,7 @@ body {
   color: #fff;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .header .topbar {
@@ -945,6 +946,26 @@ body {
   display: flex;
 }
 
+.slider .slider-board ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffdd00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slider-board ul li a {
+  color: #ffdd00;
+  font-size: 20px;
+}
+
 .slider .slider-board .dots {
   position: absolute;
   -webkit-transform: translate(-50%, 0);
@@ -1268,8 +1289,284 @@ body {
           transform: translate(0, -50%);
 }
 
+.package .discount {
+  overflow: hidden;
+  margin-top: 110px;
+  position: relative;
+  padding-bottom: 300px;
+}
+
+.package .discount-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.package .discount-text .h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.package .discount-text .lorem {
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 730px;
+  text-align: center;
+  color: #616161;
+}
+
+.package .discount-text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 171px;
+  height: 45px;
+  border-radius: 23px;
+  border: 1px solid #ffc001;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffc001;
+  margin-top: 55px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.package .discount-text a .fa-long-arrow-alt-right {
+  margin-right: 10px;
+}
+
+.package .discount-text a:hover {
+  background-color: #ffc001;
+  color: #fff;
+}
+
+.package .discount .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 230px;
+}
+
+.package .discount .time .time-item {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.package .discount .time .time-item .value {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.package .discount .time .time-item .period {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.package .discount .time #days {
+  color: #ffc001;
+}
+
+.package .discount .time #hours {
+  color: #ef6f6c;
+}
+
+.package .discount .time #minutes {
+  color: #28c190;
+}
+
+.package .discount .time #second {
+  color: #333333;
+}
+
+.package .discount #discount-slider {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.package .discount #discount-slider .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.package .discount #discount-slider .owl-item .item {
+  width: 770px;
+  height: 300px;
+  -webkit-box-shadow: 0 0 30px rgba(230, 230, 230, 0.3);
+          box-shadow: 0 0 30px rgba(230, 230, 230, 0.3);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.package .discount #discount-slider .owl-item .item .img {
+  background-image: url(../img/Mountain-in-Banff-National-Park.png);
+  width: 350px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text {
+  padding: 45px 30px 40px 40px;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .time-tour li {
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .time-tour li:last-child {
+  margin-top: 17px;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .time-tour li .fa-check-circle {
+  color: #ffc001;
+  margin-right: 15px;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .price {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffc001;
+  margin-top: 25px;
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .btn-wrap {
+  top: 50%;
+  right: -30px;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.package .discount #discount-slider .owl-item .item .slider-text .btn-wrap .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 171px;
+  height: 45px;
+  border-radius: 0 2px 2px 0;
+  background-color: #fbad03;
+  opacity: 0.8;
+  color: #ffffff;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.package .discount #discount-slider .owl-nav {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0 370px;
+  top: 50%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.package .discount #discount-slider .owl-nav .owl-prev, .package .discount #discount-slider .owl-nav .owl-next {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  outline: none;
+}
+
+.package .discount #discount-slider .owl-nav .disabled {
+  opacity: .2;
+}
+
+.package .discount #discount-slider .owl-nav span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/arrow-owl.png);
+  background-position: center;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.package .discount #discount-slider .owl-nav .next {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .owl-item {
   padding: 30px 0;
+}
+
+.owl-prev, .owl-next {
+  outline: none;
 }
 
 .active-menu {
@@ -1278,6 +1575,12 @@ body {
 
 .overflow {
   overflow: hidden;
+}
+
+@media (max-width: 1700px) {
+  .package .discount #discount-slider .owl-nav {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1311,6 +1614,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .package .discount {
+    margin-top: 300px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1319,6 +1625,24 @@ body {
   }
   .destinations #destinations-slider .item .img-box {
     display: none;
+  }
+  .package .discount #discount-slider .owl-item .item {
+    width: 90vw;
+  }
+  .package .discount #discount-slider .owl-item .item .img {
+    display: none;
+  }
+  .package .discount #discount-slider .owl-nav {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .package .discount #discount-slider .owl-nav {
+    margin-top: 50px;
+  }
+  .package .discount #discount-slider .owl-nav .next {
+    margin-left: 50px;
   }
 }
 
@@ -1345,6 +1669,9 @@ body {
   .package .holiday #holiday-slider {
     min-width: 300px;
     width: 100%;
+  }
+  .package .discount {
+    margin-top: 400px;
   }
 }
 
@@ -1398,6 +1725,9 @@ body {
   }
   .package .holiday-text .lorem {
     padding: 0 20px;
+  }
+  .package .discount #discount-slider .owl-item .item .slider-text .btn-wrap {
+    right: -60px;
   }
 }
 
