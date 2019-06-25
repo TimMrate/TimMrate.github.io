@@ -37,6 +37,7 @@ $(document).ready(function() {
     var owl3 = $('#destinations-slider');
     var owl4 = $('#holiday-slider');
     var owl5 = $('#discount-slider');
+    var owl6 = $('#articles-slider');
     owl1.owlCarousel({
         startPosition: 3,
         responsive: {
@@ -107,6 +108,29 @@ owl5.owlCarousel({
     '<span class="next"><i class="fas fa-chevron-left"></i></span>'],
     dots: false
 });
+owl6.owlCarousel({
+    smartSpeed: 800,
+    dots: false,
+    margin: 30,
+    mouseDrag: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        575:{
+             items: 1
+        },
+        768: {
+            items: 2
+        },
+        1180: {
+            items: 2
+        },
+        1660: {
+            items: 3,
+        }
+    }
+});
 
     // Якорные ссылки
     $(".link").on("click", function(event) {
@@ -122,6 +146,6 @@ owl5.owlCarousel({
         $("body,html").animate({ scrollTop: top }, 2000);
         menu.toggleClass("active-menu");
         $("html").toggleClass("overflow");
-        $hamburger.toggleClass("is-active");
+        hamburger.toggleClass("is-active");
     });
 });
