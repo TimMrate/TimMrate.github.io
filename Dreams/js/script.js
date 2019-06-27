@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $.fn.extend({
         animateCss: function(animationName) {
             var animationEnd =

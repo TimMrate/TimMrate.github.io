@@ -1820,6 +1820,7 @@ body {
   background-image: url(../img/world.png);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer .contact {
@@ -2090,6 +2091,16 @@ body {
   }
   .package .discount {
     margin-top: 400px;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer .world {
+    height: auto;
+  }
+  .footer .contact {
+    padding-bottom: 100px;
+    padding-top: 60px;
   }
 }
 
