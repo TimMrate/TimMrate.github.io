@@ -18,6 +18,10 @@
        align-items: center
     .package .discount
         margin-top: 300px
+    #menu
+        display: none    
+    .articles #articles-slider .item
+        border: 1px solid rgba(#bababa, 0.2)
 // Средние девайсы («таблетки», < 992px) 
 @media (max-width:991.98px)
     .destinations #destinations-slider .item
@@ -37,7 +41,17 @@
             margin-left:  50px
     .blog
         padding-bottom: 220px
-    
+    #location
+        display: none
+    .footer .footer-c
+        flex-direction:  column
+        justify-content: center
+        min-height:  0
+        .cop
+            margin-top: 15px
+            margin-bottom: 15px
+        ul
+            display: none
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width:768px) 
     .hamburger
@@ -111,7 +125,10 @@
     .blog .video
         width: 98%
         height:  200px
-
+    #support
+        display: none
+    .footer .contact
+        justify-content: center
 @media (max-width:360px)
     .header .header-text
         margin-top: 40px

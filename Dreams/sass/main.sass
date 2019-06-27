@@ -907,6 +907,10 @@ body
         top: 100%
         width: 630px
         height: 330px
+        iframe
+            border:  none
+            width: 100%
+            height: 100%
 .articles
     #articles-slider
         .owl-item   
@@ -982,8 +986,89 @@ body
                         height: 40px
                         border-radius: 10px 1px 10px 25px
                         background-color: #f9f7f7
-                    
-
+.footer
+    background-color: #1b2739
+    height: 620px
+    position: relative
+    .world
+        position: relative
+        height: 620px
+        background-image: url(../img/world.png)
+        background-position: center
+        background-size: contain
+    .contact
+        padding-top: 120px
+        display: flex
+        .phone, .fax, .email
+            color: #bababa
+            font-size: 14px
+            font-weight: 400
+            margin-bottom: 20px
+        .phone
+            margin-top: 40px
+        .email
+            margin-bottom: 40px
+        .social
+            display: flex
+            li
+                list-style:  none
+                margin-right: 30px
+                &:last-child
+                    margin: 0
+                a
+                    color: #ffffff
+                    font-size: 14px
+                    &:hover
+                        color: $accent
+        .column-text
+            margin-left: 190px
+            .title
+                color: #ffffff
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+                margin-bottom: 12px
+            .hr
+                width: 24px
+                height: 1px
+                background-color: $accent
+            .list
+                margin-top: 40px
+                li
+                    list-style:  none
+                    margin-bottom: 30px
+                a
+                    color: #bababa
+                    font-size: 14px
+                    font-weight: 400
+                    transition: color .3s ease
+                    &:hover
+                        color: $accent
+    .footer-c
+        position: absolute
+        bottom: 0
+        left:  0
+        min-height:  100px
+        width: 100%
+        border-top: 1px solid rgba(#fff, 0.05)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .cop
+            color: #bababa
+            font-size: 14px
+            font-weight: 400
+            opacity:  0.6
+        ul
+            display: flex
+            li
+                list-style:  none
+                margin-right: 45px
+                a
+                    color: #bababa
+                    font-size: 14px
+                    font-weight: 400
+                    opacity:  0.6
 
 
 //  Отдельные стили
@@ -998,4 +1083,3 @@ body
 
 // Медиа запросы
 @import 'media' 
-

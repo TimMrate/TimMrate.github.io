@@ -17,8 +17,50 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
+        <!-- Прелодер -->
+        <style type="text/css">
+            #hellopreloader_preload {
+                display: block;
+                position: fixed;
+                z-index: 99999;
+                top: 50%;
+                left: 50%;
+                transform:  translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                min-width: 1000px;
+                background: #f4dc8c;
+                background-image: url(http://hello-site.ru//main/images/preloads/puff.svg);
+                background-position:  center;
+                background-size: 160px;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <div id="hellopreloader">
+            <div id="hellopreloader_preload"></div>
+        </div>
+        <script type="text/javascript">
+            var hellopreloader = document.getElementById(
+                "hellopreloader_preload"
+            );
+            function fadeOutnojquery(el) {
+                el.style.opacity = 1;
+                var interhellopreloader = setInterval(function() {
+                    el.style.opacity = el.style.opacity - 0.05;
+                    if (el.style.opacity <= 0.05) {
+                        clearInterval(interhellopreloader);
+                        hellopreloader.style.display = "none";
+                    }
+                }, 16);
+            }
+            window.onload = function() {
+                setTimeout(function() {
+                    fadeOutnojquery(hellopreloader);
+                }, 1000);
+            };
+        </script>
         <!-- Хедер -->
-        <header class="header">
+        <header class="header" id="home">
             <div class="bgh"></div>
             <!-- Мобильное меню -->
             <div class="full-menu" id="hmenu">
@@ -26,14 +68,16 @@
                 <nav>
                     <ul class="full-menu__list">
                         <li class="active">
-                            <a href="#" class="link-menu">Home</a>
+                            <a href="#home" class="link-menu">Home</a>
                         </li>
                         <li><a href="#tours" class="link-menu">tours</a></li>
                         <li>
                             <a href="#package" class="link-menu">package</a>
                         </li>
                         <li><a href="#blog" class="link-menu">Blog</a></li>
-                        <li><a href="#contact" class="link-menu">Contact</a></li>
+                        <li>
+                            <a href="#contact" class="link-menu">Contact</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="full-menu__social">
@@ -163,46 +207,46 @@
                             Inventore iusto atque doloribus!
                         </div>
                         <div class="tabs__content active animated fadeInLeft">
-                            <form action="">
+                            <form action="#">
                                 <div class="form-inp">
-                                    <label for="inp1" class="form-label"
+                                    <label for="inpf" class="form-label"
                                         >where?</label
                                     >
                                     <input
-                                        id="inp1"
+                                        id="inpf"
                                         class="form-input"
                                         type="text"
                                         placeholder="Choose location"
                                     />
                                 </div>
                                 <div class="form-inp">
-                                    <label for="inp1" class="form-label"
+                                    <label for="inps" class="form-label"
                                         >which?</label
                                     >
                                     <input
-                                        id="inp1"
+                                        id="inps"
                                         class="form-input"
                                         type="text"
                                         placeholder="Choose City"
                                     />
                                 </div>
                                 <div class="form-inp">
-                                    <label for="inp1" class="form-label"
+                                    <label for="inpt" class="form-label"
                                         >Check in</label
                                     >
                                     <input
-                                        id="inp1"
+                                        id="inpt"
                                         class="form-input"
                                         type="text"
                                         placeholder="YY-DD-MM"
                                     />
                                 </div>
                                 <div class="form-inp">
-                                    <label for="inp1" class="form-label"
+                                    <label for="inpfo" class="form-label"
                                         >Check out</label
                                     >
                                     <input
-                                        id="inp1"
+                                        id="inpfo"
                                         class="form-input"
                                         type="text"
                                         placeholder="YY-DD-MM"
@@ -368,9 +412,9 @@
         </section>
         <section class="destinations">
             <div class="destinations-text">
-                <div class="h3">
+                <h3 class="h3">
                     Destinations for Honeymoon
-                </div>
+                </h3>
                 <div class="lorem">
                     Love travel? Plan and book your perfect trip with expert
                     advice, travel tips, destination information and inspiration
@@ -472,7 +516,7 @@
                 <div class="item">
                     <div class="img-box">
                         <img
-                            src="img\Mountain-in-Banff-National-Park.png"
+                            src="img/Mountain-in-Banff-National-Park.png"
                             alt=""
                             width="370"
                             height="370"
@@ -500,7 +544,7 @@
                 <div class="item">
                     <div class="img-box">
                         <img
-                            src="img\best_honeymoon_destinations_for_active_couples.png"
+                            src="img/best_honeymoon_destinations_for_active_couples.png"
                             alt=""
                             width="370"
                             height="370"
@@ -730,7 +774,7 @@
                     <div class="blog-text">
                         <h3 class="h3">It’s a big deal!</h3>
                         <p class="lorem">subscribe our news letter</p>
-                        <form action="" class="email">
+                        <form action="#" class="email">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
@@ -740,10 +784,7 @@
                     </div>
                     <div class="video">
                         <iframe
-                            width="100%"
-                            height="100%"
                             src="https://www.youtube.com/embed/ImPM5IDIYPs?list=RD6JQm5aSjX6g"
-                            frameborder="0"
                         ></iframe>
                     </div>
                 </div>
@@ -844,6 +885,95 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="container world">
+                <div class="contact" id="contact">
+                    <div class="adress">
+                        <a href="#"><img src="img/logo.png" alt="logo"/></a>
+                        <p class="phone">Phone: +91 254 541 254</p>
+                        <p class="fax">Fax : +44 161 999 8888</p>
+                        <p class="email">Email: dreamland@dream.com</p>
+                        <ul class="social">
+                            <li>
+                                <a href="#"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fab fa-google-plus-g"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-text" id="support">
+                        <p class="title">Support</p>
+                        <div class="hr"></div>
+                        <ul class="list">
+                            <li><a href="#">Email Contact</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Live chat</a></li>
+                            <li><a href="#">Our Community</a></li>
+                            <li><a href="#">Services Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-text" id="location">
+                        <p class="title">Location</p>
+                        <div class="hr"></div>
+                        <ul class="list">
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">America</a></li>
+                            <li><a href="#">India</a></li>
+                            <li><a href="#">Australia</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-text" id="menu">
+                        <p class="title">Menu</p>
+                        <div class="hr"></div>
+                        <ul class="list">
+                            <li><a href="#home" class="link">Home</a></li>
+                            <li><a href="#tours" class="link">Tours</a></li>
+                            <li><a href="#package" class="link">Package</a></li>
+                            <li><a href="#blog" class="link">Blog</a></li>
+                            <li><a href="#contact" class="link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-c">
+                    <p class="cop">
+                        <i class="far fa-copyright"></i> 2018 All Rights.
+                        Reserved
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">About Hoststar</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
         <!-- Скрипты -->
         <script src="libs/jquery-3.4.1.min.js"></script>
