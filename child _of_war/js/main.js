@@ -19,5 +19,5 @@ $(document).ready(function () {
         }, 1000);
         return false;
     });
-    $('.parallax-window').parallax({ imageSrc:'../img/bg.png'});
+    $('.parallax-window').parallax({ imageSrc:'../img/prisoners-bg.png'});
 });
