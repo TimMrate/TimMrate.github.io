@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('a[href*="#"]').click(function () {
         $page.animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 800);
+        }, 1000);
         return false;
     });
     $('.parallax-window').parallax({ imageSrc:'../img/bg.png'});

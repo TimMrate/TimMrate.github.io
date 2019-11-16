@@ -377,6 +377,57 @@ body {
   background: transparent;
 }
 
+.prisoners .prisoners-text {
+  padding: 0 170px;
+}
+
+.prisoners .prisoners-text .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prisoners .prisoners-text .about p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.prisoners .prisoners-text .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.w666 {
+  max-width: 666px;
+}
+
+.w700 {
+  max-width: 700px;
+}
+
+.w790 {
+  max-width: 790px;
+}
+
+.w740 {
+  max-width: 740px;
+}
+
+.end-text {
+  font-size: 28px;
+  max-width: 475px;
+  margin-right: 40px;
+}
+
 @-webkit-keyframes pulsing {
   0% {
     -webkit-transform: scale(0.8, 0.8);
