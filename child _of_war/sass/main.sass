@@ -187,12 +187,17 @@ body
             left: 50%
             transform: translateX(-50%)
             .owl-dot
+                &:active
+                    border: none
+                    outline: none
+                border: none
+                outline: none
                 width: 17px
                 height: 17px
                 border-radius: 50%
                 border: $accent solid 1px
                 margin-right: 10px
-                transition: 0.3s ease
+                transition: 0.8s ease
                 &:last-child
                     margin-right: 0
                 &.active
@@ -204,15 +209,46 @@ body
                 transform: translateX(-50%)
                 bottom: 0
                 transform: translateY(15%)
+                &:active
+                    border: none
+                    outline: none
+                border: none
+                outline: none
             .owl-prev
                 position: absolute
                 left: 42%
                 transform: translateX(-50%)
                 bottom: 0
                 transform: translateY(15%)
+                &:active
+                    border: none
+                    outline: none
+                border: none
+                outline: none
             i
                 color: $accent
                 font-size: 32px
+// Узники концлагерей
+.prisoners
+    .prisoners-bg
+        position: relative
+        .bg-text
+            position: absolute  
+            transform: translate(-50%, -50%)
+            left: 50%
+            top: 50%
+            text-align: center
+            font-size: 68px
+            font-weight: 700
+            text-transform: uppercase
+            color: #ffffff
+            -webkit-text-stroke: 2px black
+            -webkit-text-fill-color: rgba(255,255,255,0.5)
+        .parallax-window
+            width: 100%
+            min-height: 750px
+            background: transparent
+
 
 // Анимации
 @-webkit-keyframes pulsing

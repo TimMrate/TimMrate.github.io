@@ -289,13 +289,20 @@ body {
 }
 
 .heros .owl-carousel .owl-dots .owl-dot {
+  border: none;
+  outline: none;
   width: 17px;
   height: 17px;
   border-radius: 50%;
   border: #B40000 solid 1px;
   margin-right: 10px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.heros .owl-carousel .owl-dots .owl-dot:active {
+  border: none;
+  outline: none;
 }
 
 .heros .owl-carousel .owl-dots .owl-dot:last-child {
@@ -314,6 +321,13 @@ body {
   bottom: 0;
   -webkit-transform: translateY(15%);
           transform: translateY(15%);
+  border: none;
+  outline: none;
+}
+
+.heros .owl-carousel .owl-nav .owl-next:active {
+  border: none;
+  outline: none;
 }
 
 .heros .owl-carousel .owl-nav .owl-prev {
@@ -324,11 +338,43 @@ body {
   bottom: 0;
   -webkit-transform: translateY(15%);
           transform: translateY(15%);
+  border: none;
+  outline: none;
+}
+
+.heros .owl-carousel .owl-nav .owl-prev:active {
+  border: none;
+  outline: none;
 }
 
 .heros .owl-carousel .owl-nav i {
   color: #B40000;
   font-size: 32px;
+}
+
+.prisoners .prisoners-bg {
+  position: relative;
+}
+
+.prisoners .prisoners-bg .bg-text {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+}
+
+.prisoners .prisoners-bg .parallax-window {
+  width: 100%;
+  min-height: 750px;
+  background: transparent;
 }
 
 @-webkit-keyframes pulsing {
