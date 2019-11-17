@@ -4,6 +4,8 @@ $accent: #B40000
     padding: 0
     margin: 0
     box-sizing: border-box
+html
+    overflow-x: hidden
 body
     font-family: 'Open Sans', sans-serif
     overflow-x: hidden
@@ -24,6 +26,8 @@ body
         height: 175px
         width: 100%
         background-color: rgba(0,0,0,0.6)
+        .hamburger
+            display: none
         .links
             font-size: 32px
             font-weight: 600
@@ -212,8 +216,8 @@ body
                 &:active
                     border: none
                     outline: none
-                border: none
-                outline: none
+                    border: none
+                    outline: none
             .owl-prev
                 position: absolute
                 left: 42%
@@ -223,17 +227,18 @@ body
                 &:active
                     border: none
                     outline: none
-                border: none
-                outline: none
+                    border: none
+                    outline: none
             i
                 color: $accent
                 font-size: 32px
 // Узники концлагерей
 .prisoners
+    padding-bottom: 170px
     .prisoners-bg
         position: relative
         .bg-text
-            position: absolute  
+            position: absolute
             transform: translate(-50%, -50%)
             left: 50%
             top: 50%
@@ -260,6 +265,66 @@ body
                 font-style: italic
         .reverse
             flex-direction: row-reverse
+
+// Дети герои Брюховецкого района
+.my-heros
+    .top-text
+        font-size: 65px
+        font-weight: 600
+        text-align: center
+    .golub-text
+        font-size: 44px
+        text-align: center
+        margin-top: 50px
+        margin-bottom: 30px
+    .golub
+        padding: 0 170px
+        display: flex
+        justify-content: space-between
+        .about
+            font-size: 26px
+            font-style: italic
+            max-width: 675px
+    .ungur
+        display: flex
+        justify-content: space-between
+        margin-top: 130px
+        padding: 0 340px
+        .ungur-text
+            .name
+                font-size: 44px
+                text-align: center
+                margin-bottom: 60px
+            .about
+                font-size: 22px
+                font-style: italic
+                text-align: center
+                max-width: 760px
+// Footer
+footer
+    padding: 0 170px
+    padding-top: 100px
+    padding-bottom: 20px
+    .hr
+        height: 1px
+        width: 100%
+        background-color: #707070
+    .to-up
+        display: block
+        font-weight: 600
+        text-align: center
+        font-size: 26px
+        line-height: 10px
+        text-transform: uppercase
+        color: #707070
+        text-decoration: none
+        transition: 0.3s ease
+        &:hover
+            color: #000
+            opacity: 0.8
+        i
+            font-size: 40px
+
 // Отдельные помарки
 .w666
     max-width: 666px
@@ -273,19 +338,20 @@ body
     font-size: 28px
     max-width: 475px
     margin-right: 40px
+
 // Анимации
 @-webkit-keyframes pulsing
   0%
-                -webkit-transform: scale(0.8, 0.8)
-                transform: scale(0.8, 0.8)
+    -webkit-transform: scale(0.8, 0.8)
+    transform: scale(0.8, 0.8)
 
   50%
-                -webkit-transform: scale(1.0, 1.0)
-                transform: scale(1.0, 1.0)
+    -webkit-transform: scale(1.0, 1.0)
+    transform: scale(1.0, 1.0)
 
   100%
-                -webkit-transform: scale(0.8, 0.8)
-                transform: scale(0.8, 0.8)
+    -webkit-transform: scale(0.8, 0.8)
+    transform: scale(0.8, 0.8)
 
 @keyframes pulsing
     0%
@@ -299,3 +365,5 @@ body
     100%
         -webkit-transform: scale(0.8, 0.8)
         transform: scale(0.8, 0.8)
+@import hamburgers
+@import media

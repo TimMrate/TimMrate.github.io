@@ -20,4 +20,27 @@ $(document).ready(function () {
         return false;
     });
     $('.parallax-window').parallax({});
+
+    var $hamburger = $(".hamburger");
+    var $menu = $('.top-nav');
+    var $text = $('.header-text');
+    var $body = $('html')
+    var $icon = $('.icon')
+    var link = $('.tlink')
+    $hamburger.on("click", function (e) {
+        $hamburger.toggleClass("is-active");
+        // Do something else, like open/close menu
+        $menu.toggleClass("active-menu");
+        $text.toggleClass("none");
+        $icon.toggleClass("none");
+        $body.toggleClass("overflow");
+    });
+    link.on("click", function (e) {
+        $hamburger.removeClass("is-active");
+        $menu.removeClass("active-menu");
+        $text.removeClass("none");
+        $icon.removeClass("none");
+        $body.removeClass("overflow");
+        console.log('chf,jnfkj');
+    });
 });

@@ -42,10 +42,6 @@ $(document).ready(function() {
     owl1.owlCarousel({
         startPosition: 3,
         responsive: {
-            0: {
-                items: 1
-            },
-            768: {
                 items: 1
             },
             1180: {
