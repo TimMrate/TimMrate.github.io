@@ -7,9 +7,9 @@ $(document).ready(function () {
         items: 1,
         center: true,
         dots: true,
-        margin: 180,
+        margin: 0,
         smartSpeed: 800,
-        autoplay: true,
+        
         autoplayHoverPause: true,
     });
     var $page = $('html, body');

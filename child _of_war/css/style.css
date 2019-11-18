@@ -824,6 +824,11 @@ footer .to-up i {
 }
 
 @media (max-width: 1200px) {
+  footer {
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
   .my-heros .ungur .ungur-text .about {
     font-size: 18px;
     max-width: 450px;
@@ -913,6 +918,15 @@ footer .to-up i {
 }
 
 @media (max-width: 991.98px) {
+  .prisoners .prisoners-text .end-text {
+    margin: 0 !important;
+  }
+  .header-text .h1 {
+    line-height: 48px;
+    margin-top: 20px;
+    font-size: 48px;
+    max-width: 85%;
+  }
   .header .top-nav .links li .two_lines p:last-child {
     font-size: 29.2px;
   }
@@ -937,9 +951,9 @@ footer .to-up i {
     z-index: 2;
   }
   .header .top-nav .links li {
-    padding: 10px;
-    margin-top: 30px;
-    border: 1px solid #B40000;
+    padding: 30px;
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.75);
   }
   .header .top-nav .hamburger {
     right: 10px;
@@ -972,6 +986,242 @@ footer .to-up i {
   }
   .overflow {
     overflow: hidden;
+  }
+  .my-heros .ungur {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-heros .ungur .ungur-text .name {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .heros .owl-carousel .owl-item .item {
+    margin: 40px 30px;
+  }
+  .heros .owl-carousel .owl-nav .owl-next {
+    left: 66%;
+  }
+  .heros .owl-carousel .owl-nav .owl-prev {
+    left: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  .owl-next {
+    left: 68% !important;
+  }
+  .owl-prev {
+    left: 30% !important;
+  }
+  .img {
+    max-width: 95%;
+    height: auto;
+  }
+  .prisoners .prisoners-text {
+    padding: 0 50px;
+  }
+  .my-heros .golub .about {
+    margin: -80px 0;
+    margin-bottom: 0;
+  }
+  .my-heros .ungur {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .my-heros .golub .about {
+    margin: -110px 0;
+    margin-bottom: 0;
+  }
+  .my-heros .ungur .ungur-text .name {
+    font-size: 22px;
+  }
+  .my-heros .ungur img {
+    max-width: 350px !important;
+    height: 502px;
+  }
+  .heros .owl-carousel .owl-item .item .main .awards ul .award {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .owl-carousel .owl-item img {
+    max-width: 70%;
+  }
+  .my-heros .ungur .ungur-text .about {
+    font-size: 16px;
+  }
+  .my-heros .golub {
+    padding: 0 10px;
+  }
+  .my-heros .golub .about {
+    font-size: 16px;
+  }
+  .my-heros .golub .img {
+    margin-bottom: -150px;
+  }
+  .my-heros .golub-text {
+    font-size: 22px;
+  }
+  .my-heros .top-text {
+    font-size: 35px;
+  }
+  .owl-next {
+    left: 80% !important;
+  }
+  .owl-prev {
+    left: 18% !important;
+  }
+  .heros .owl-carousel .owl-item .item .main .awards {
+    padding: 0;
+  }
+  .header-text {
+    top: 30%;
+    margin: 0;
+  }
+  .header-text .h2 {
+    font-size: 28px;
+  }
+  .header-text .h1 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .header-text .lorem {
+    font-size: 22px;
+  }
+  .header .top-nav .links {
+    font-size: 32px;
+    text-align: center;
+  }
+  .header .top-nav .links li {
+    max-width: 90%;
+  }
+  .heros .owl-carousel .owl-item .item {
+    margin: 10px;
+  }
+  .heros .owl-carousel .owl-item .item .about {
+    height: auto;
+  }
+  .heros .owl-carousel .owl-item .item .about .about-text {
+    text-align: left;
+    font-size: 14px;
+  }
+  .prisoners .prisoners-text .about p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .prisoners .prisoners-bg .bg-text {
+    font-size: 42px;
+  }
+  .heros .owl-carousel .owl-item .item .about .name {
+    font-size: 30px;
+  }
+  .heros .owl-carousel .owl-item .item .main {
+    padding: 15px;
+  }
+  .heros .owl-carousel .owl-nav .owl-next {
+    bottom: -25px !important;
+  }
+  .owl-prev {
+    bottom: -25px !important;
+  }
+  .heros .owl-carousel .owl-dots {
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header .top-nav .links {
+    font-size: 25px;
+  }
+  .header .top-nav .links li {
+    margin-top: 15px;
+    padding: 15px;
+  }
+  .header-text .h2 {
+    font-size: 24px;
+  }
+  .header-text .h1 {
+    font-size: 30px;
+  }
+  .header-text .lorem {
+    font-size: 18px;
+  }
+  .header .icon {
+    display: none;
+  }
+  .heros_text {
+    font-size: 30px;
+  }
+  .heros .hr {
+    margin-top: 20px;
+  }
+  .heros .owl-carousel .owl-item .item .about .name {
+    font-size: 22px;
+  }
+  .heros .owl-carousel .owl-item .item .about .about-text {
+    font-size: 13px;
+  }
+  .owl-carousel .owl-item img {
+    max-width: 50%;
+  }
+  .heros .owl-carousel .owl-item .item .main .awards ul .award {
+    margin-right: -10px;
+  }
+  .heros .owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+  }
+  .heros .owl-carousel .owl-item .item .about {
+    padding: 5px;
+  }
+  .heros .owl-carousel .owl-item .item .main {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .heros .owl-carousel .owl-item .item .main .awards ul {
+    margin-top: 10px;
+  }
+  .owl-next {
+    bottom: -25px !important;
+  }
+  .owl-prev {
+    bottom: -25px !important;
+  }
+  .heros .owl-carousel .owl-dots {
+    bottom: -25px;
+  }
+  .prisoners .prisoners-bg .bg-text {
+    font-size: 30px;
+  }
+  .prisoners .prisoners-text .about p {
+    font-size: 13px;
+  }
+  .prisoners .prisoners-text .end-text {
+    font-size: 15px !important;
+    margin: 0 !important;
+  }
+  .my-heros .top-text {
+    font-size: 30px;
+  }
+  .my-heros .golub .about {
+    font-size: 14px;
+    margin-top: -140px;
+  }
+  .my-heros .ungur {
+    padding: 0 15px;
+  }
+  .my-heros .ungur img {
+    width: 300px;
+    height: 452px;
+  }
+  .my-heros .ungur .ungur-text .about {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
