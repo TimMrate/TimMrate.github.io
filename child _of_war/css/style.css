@@ -471,7 +471,7 @@ body {
   max-width: 760px;
 }
 
-footer {
+footer .wrap {
   padding: 0 170px;
   padding-top: 100px;
   padding-bottom: 20px;
@@ -503,6 +503,21 @@ footer .to-up:hover {
 
 footer .to-up i {
   font-size: 40px;
+}
+
+footer .copyright {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .w666 {
@@ -824,7 +839,7 @@ footer .to-up i {
 }
 
 @media (max-width: 1200px) {
-  footer {
+  footer .wrap {
     padding: 0 50px;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -1035,6 +1050,9 @@ footer .to-up i {
 }
 
 @media (max-width: 575.98px) {
+  .copyright p {
+    font-size: 13px;
+  }
   .my-heros .golub .about {
     margin: -110px 0;
     margin-bottom: 0;
@@ -1136,6 +1154,9 @@ footer .to-up i {
 }
 
 @media (max-width: 360px) {
+  .copyright p {
+    font-size: 10px;
+  }
   .header .top-nav .links {
     font-size: 25px;
   }
