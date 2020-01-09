@@ -41,7 +41,8 @@ $(document).ready(function() {
     var owl6 = $('#articles-slider');
     owl1.owlCarousel({
         startPosition: 3,
-        responsive: {
+        responsive: { 
+            0: {
                 items: 1
             },
             1180: {
