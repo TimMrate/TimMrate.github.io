@@ -3,7 +3,10 @@ $(document).ready(function(){
       items:1,
       animateOut: 'IN',
       animateIn: 'OUT', 
-      nav: true,
+      // startPosition: 3,
+      dots: true,
+      dotsContainer: "#owl-dots",
+      mouseDrag: false,
     });
   });
  
