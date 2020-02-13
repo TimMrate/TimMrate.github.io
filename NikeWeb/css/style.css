@@ -1,13 +1,13 @@
-body {
-  font-family: 'Oswald', sans-serif;
-  overflow: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
 }
 
 .header {
@@ -27,24 +27,24 @@ body {
 }
 
 .header .midlogo {
-  position: absolute;
+  background-image: url(../img/midlogo.png);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  position: absolute;
   left: 55%;
   top: 50%;
   width: 987px;
   height: 346px;
-  background-image: url(../img/midlogo.png);
   z-index: 0;
 }
 
 .header .textbg {
   background-image: url(../img/textbg.png);
-  width: 330px;
-  height: 600px;
   position: absolute;
   right: 36px;
   bottom: -40px;
+  width: 330px;
+  height: 600px;
   z-index: 0;
 }
 
@@ -164,14 +164,6 @@ body {
   margin-top: 80px;
 }
 
-.main_shoes-slider .owl-carousel {
-  overflow-x: visible !important;
-}
-
-.main_shoes-slider .owl-carousel .owl-item {
-  overflow-x: visible !important;
-}
-
 .main_shoes-slider .owl-carousel .owl-item.active .item {
   opacity: 1 !important;
 }
@@ -260,22 +252,23 @@ body {
 }
 
 .main_shoes-slider .owl-carousel .owl-item .item .shoe_img img {
-  min-width: 525px;
+  min-width: 550px;
+  max-width: 640px;
 }
 
 .main_shoes-slider .owl-carousel .owl-item .item .color_btns {
-  -webkit-transform: translateY(-103%) !important;
-          transform: translateY(-103%) !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
+  -webkit-transform: translateY(-103%);
+          transform: translateY(-103%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  top: 50% !important;
-  left: 75% !important;
+  top: 315px;
+  left: 75%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition-delay: 0.6s;
@@ -283,16 +276,44 @@ body {
 }
 
 .main_shoes-slider .owl-carousel .owl-item .item .color_btns button {
+  opacity: 0.9;
   margin-bottom: 25px;
   border: none;
   background-color: #fff;
   min-width: 60px;
   height: 60px;
   border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_shoes-slider .owl-carousel .owl-item .item .color_btns button:hover {
+  -webkit-box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 .main_shoes-slider .owl-carousel .owl-item .item .color_btns button:last-child {
   margin: 0;
+}
+
+.main_shoes-slider .owl-carousel .owl-item .item .color_btns button .circle-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
 }
 
 .main_shoes-slider .owl-dots {
@@ -375,6 +396,22 @@ body {
           transform-origin: -481px 0 0;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
+}
+
+button#black .circle-color {
+  background-color: #000000;
+}
+
+button#blue .circle-color {
+  background-color: #00378a;
+}
+
+button#yellow .circle-color {
+  background-color: #f3e039;
+}
+
+button#red .circle-color {
+  background-color: #ff7074;
 }
 
 @-webkit-keyframes IN {

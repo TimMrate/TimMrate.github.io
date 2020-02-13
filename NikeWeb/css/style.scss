@@ -1,13 +1,14 @@
-body {
-   font-family: 'Oswald', sans-serif;
-   overflow: hidden;
-}
-
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
+
+body {
+   font-family: 'Oswald', sans-serif;
+   overflow: hidden;
+}
+
 
 // Header
 .header {
@@ -27,23 +28,23 @@ body {
    }
 
    .midlogo {
-      position: absolute;
+      background-image: url(../img/midlogo.png);
       transform: translate(-50%, -50%);
+      position: absolute;
       left: 55%;
       top: 50%;
       width: 987px;
       height: 346px;
-      background-image: url(../img/midlogo.png);
       z-index: 0;
    }
 
    .textbg {
       background-image: url(../img/textbg.png);
-      width: 330px;
-      height: 600px;
       position: absolute;
       right: 36px;
       bottom: -40px;
+      width: 330px;
+      height: 600px;
       z-index: 0;
    }
 
@@ -77,13 +78,11 @@ body {
    justify-content: space-between;
 
    .logo {
-
       width: 150px;
       height: 53px;
    }
 
    .navigation_list {
-
       display: flex;
       align-items: center;
 
@@ -152,10 +151,7 @@ body {
    margin-top: 80px;
 
    .owl-carousel {
-      overflow-x: visible !important;
-
       .owl-item {
-         overflow-x: visible !important;
 
          &.active {
 
@@ -231,32 +227,51 @@ body {
                left: -30%;
                transition: 0.5s;
                transition-delay: 0.6s;
-
+               
                img {
-                  min-width: 525px;
+                  min-width: 550px;
+                  max-width: 640px;
                }
             }
 
             .color_btns {
-               transform: translateY(-103%) !important;
-               display: flex !important;
-               flex-direction: column !important;
+               transform: translateY(-103%);
+               display: flex;
+               flex-direction: column;
                position: absolute;
-               top: 50% !important;
-               left: 75% !important;
+               top: 315px;
+               left: 75%;
                transition: 0.5s;
                transition-delay: 0.6s;
 
                button {
+                  opacity: 0.9;
                   margin-bottom: 25px;
                   border: none;
                   background-color: #fff;
                   min-width: 60px;
                   height: 60px;
                   border-radius: 25px;
+                  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+                  transition: 0.5s;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  &:hover {
+                     box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5);
+                     opacity: 1;
+                  }
 
                   &:last-child {
                      margin: 0;
+                  }
+
+                  .circle-color {
+                     width: 30px;
+                     height: 30px;
+                     border-radius: 50%;
+                     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
                   }
                }
             }
@@ -335,6 +350,30 @@ body {
    }
 }
 
+
+// Styles
+button#black {
+   .circle-color {
+      background-color: #000000;
+   }
+}
+button#blue {
+   .circle-color {
+      background-color: #00378a;
+   }
+}
+button#yellow {
+   .circle-color {
+      background-color: #f3e039;
+   }
+}
+button#red {
+   .circle-color {
+      background-color: #ff7074;
+   }
+}
+
+//  Animations
 @keyframes IN {
    0% {
       transform: rotate(-90deg);

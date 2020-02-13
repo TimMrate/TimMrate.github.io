@@ -46,88 +46,60 @@
             <div class="name_wrapper">
               <h3 class="name">Nike Blazer Mid</h3>
               <p class="price">100$</p>
-              <a href="#" class="btn"
-                >GET IT NOW
+              <a href="#" class="btn">
+                GET IT NOW
                 <i class="material-icons">
                   arrow_right
-                </i></a
-              >
+                </i>
+              </a>
             </div>
-            <div class="shoe_img"><img src="img/nbmBLACK.png" alt="shoe" /></div>
+            <div class="shoe_img">
+              <img src="img/nbmBLACK.png" alt="shoe" id="img-nbm" />
+            </div>
             <div class="color_btns">
-              <button data-src=""><div class="circle-color"></div></button>
-              <button data-src=""><div class="circle-color"></div></button>
+              <button
+                id="black"
+                onclick="ChangeImg('img/nbmBLACK.png','#img-nbm')"
+              >
+                <span class="circle-color"></span>
+              </button>
+              <button
+                id="blue"
+                onclick="ChangeImg('img/nbmBLue.png', '#img-nbm')"
+              >
+                <span class="circle-color"></span>
+              </button>
             </div>
           </div>
           <div class="item">
             <div class="name_wrapper">
-              <h3 class="name">Nike Blazer Mid</h3>
-              <p class="price">100$</p>
-              <a href="#" class="btn"
-                >GET IT NOW
+              <h3 class="name">Nike Air <br> Max</h3>
+              <p class="price">170$</p>
+              <a href="#" class="btn">
+                GET IT NOW
                 <i class="material-icons">
                   arrow_right
-                </i></a
-              >
+                </i>
+              </a>
             </div>
-            <div class="shoe_img"><img src="img/nbmBLACK.png" alt="shoe" /></div>
+            <div class="shoe_img">
+              <img src="img/namRED.png" alt="shoe" id="img-nam" />
+            </div>
             <div class="color_btns">
-              <button data-src=""><div class="circle-color"></div></button>
-              <button data-src=""><div class="circle-color"></div></button>
+              <button
+              id="red"
+              onclick="ChangeImg('img/namRED.png', '#img-nam')"
+              >
+              <span class="circle-color"></span>
+            </button>
+            <button
+              id="yellow"
+              onclick="ChangeImg('img/namYellow.png','#img-nam')"
+            >
+              <span class="circle-color"></span>
+            </button>
             </div>
           </div>
-          <div class="item">
-            <div class="name_wrapper">
-              <h3 class="name">Nike Blazer Mid</h3>
-              <p class="price">100$</p>
-              <a href="#" class="btn"
-                >GET IT NOW
-                <i class="material-icons">
-                  arrow_right
-                </i></a
-              >
-            </div>
-            <div class="shoe_img"><img src="img/nbmBLACK.png" alt="shoe" /></div>
-            <div class="color_btns">
-              <button data-src=""><div class="circle-color"></div></button>
-              <button data-src=""><div class="circle-color"></div></button>
-            </div>
-          </div>
-          <div class="item">
-            <div class="name_wrapper">
-              <h3 class="name">Nike Blazer Mid</h3>
-              <p class="price">100$</p>
-              <a href="#" class="btn"
-                >GET IT NOW
-                <i class="material-icons">
-                  arrow_right
-                </i></a
-              >
-            </div>
-            <div class="shoe_img"><img src="img/nbmBLACK.png" alt="shoe" /></div>
-            <div class="color_btns">
-              <button data-src=""><div class="circle-color"></div></button>
-              <button data-src=""><div class="circle-color"></div></button>
-            </div>
-          </div>
-          <div class="item">
-            <div class="name_wrapper">
-              <h3 class="name">Nike Blazer Mid</h3>
-              <p class="price">100$</p>
-              <a href="#" class="btn"
-                >GET IT NOW
-                <i class="material-icons">
-                  arrow_right
-                </i></a
-              >
-            </div>
-            <div class="shoe_img"><img src="img/nbmBLACK.png" alt="shoe" /></div>
-            <div class="color_btns">
-              <button data-src=""><div class="circle-color"></div></button>
-              <button data-src=""><div class="circle-color"></div></button>
-            </div>
-          </div>
-
         </div>
         <div class="owl-dots" id="owl-dots">
           <button class="owl-dot"><div class="active-circle"></div></button>
@@ -138,6 +110,13 @@
         </div>
       </div>
     </header>
+    <script>
+      function ChangeImg(src, toImg) {
+        var img = $(toImg);
+        img.attr("src", src);
+        console.log(src, img);
+      }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/library/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
