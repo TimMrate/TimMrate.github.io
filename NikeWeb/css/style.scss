@@ -93,8 +93,13 @@ body {
          list-style: none;
 
          a {
+            transition: 0.5s;
             text-decoration: none;
             color: #ffffff;
+
+            &:hover {
+               color: #f2b153;
+            }
          }
 
          &:last-child {
@@ -227,7 +232,7 @@ body {
                left: -30%;
                transition: 0.5s;
                transition-delay: 0.6s;
-               
+
                img {
                   min-width: 550px;
                   max-width: 640px;
@@ -239,7 +244,7 @@ body {
                display: flex;
                flex-direction: column;
                position: absolute;
-               top: 315px;
+               top: 333px;
                left: 75%;
                transition: 0.5s;
                transition-delay: 0.6s;
@@ -357,21 +362,50 @@ button#black {
       background-color: #000000;
    }
 }
+
 button#blue {
    .circle-color {
       background-color: #00378a;
    }
 }
+
 button#yellow {
    .circle-color {
       background-color: #f3e039;
    }
 }
+
 button#red {
    .circle-color {
       background-color: #ff7074;
    }
 }
+
+button#lblue {
+   .circle-color {
+      background-color: #00c2ec;
+   }
+}
+
+button#pink {
+   .circle-color {
+      background-color: #df86ad;
+   }
+}
+
+button#purple {
+   .circle-color {
+      background-color: #755f83;
+   }
+}
+
+button#gold {
+   .circle-color {
+      background-color: #c6a14f;
+   }
+}
+
+
 
 //  Animations
 @keyframes IN {

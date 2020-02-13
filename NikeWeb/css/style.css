@@ -102,8 +102,14 @@ body {
 }
 
 .top_nav .navigation_list li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-decoration: none;
   color: #ffffff;
+}
+
+.top_nav .navigation_list li a:hover {
+  color: #f2b153;
 }
 
 .top_nav .navigation_list li:last-child {
@@ -267,7 +273,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 315px;
+  top: 333px;
   left: 75%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -412,6 +418,22 @@ button#yellow .circle-color {
 
 button#red .circle-color {
   background-color: #ff7074;
+}
+
+button#lblue .circle-color {
+  background-color: #00c2ec;
+}
+
+button#pink .circle-color {
+  background-color: #df86ad;
+}
+
+button#purple .circle-color {
+  background-color: #755f83;
+}
+
+button#gold .circle-color {
+  background-color: #c6a14f;
 }
 
 @-webkit-keyframes IN {
