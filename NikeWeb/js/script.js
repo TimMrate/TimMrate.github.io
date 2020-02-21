@@ -7,7 +7,11 @@ $(document).ready(function() {
     dots: true,
     dotsContainer: "#owl-dots",
     mouseDrag: false,
-    pullDrag: false
+    pullDrag: false,
+    startPosition: 2,
+  });
+  $(".shoe-list").owlCarousel({
+    
   });
   
 });
